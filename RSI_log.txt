@@ -1,0 +1,1338 @@
+[2025-06-15 11:05:24] Bot iniciado
+[2025-06-15 11:19:00] Error en el bot: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1749979128&from=1749811128
+[2025-06-15 11:24:00] Bot activo, sin señales – 11:24:00
+[2025-06-15 11:39:01] Bot activo, sin señales – 11:39:01
+[2025-06-15 12:09:09] Error en el bot: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1749982138&from=1749814138
+[2025-06-15 21:42:00] Bot iniciado
+[2025-06-15 21:57:03] Bot activo, sin señales – 21:57:03
+[2025-06-15 22:12:04] Bot activo, sin señales – 22:12:04
+[2025-06-15 22:27:06] Bot activo, sin señales – 22:27:05
+[2025-06-15 22:42:07] Bot activo, sin señales – 22:42:07
+[2025-06-15 22:57:09] Bot activo, sin señales – 22:57:08
+[2025-06-15 23:12:10] Bot activo, sin señales – 23:12:10
+[2025-06-15 23:27:11] Bot activo, sin señales – 23:27:11
+[2025-06-15 23:47:12] Bot activo, sin señales – 23:47:11
+[2025-06-16 00:02:14] Bot activo, sin señales – 00:02:12
+[2025-06-16 00:17:15] Bot activo, sin señales – 00:17:14
+[2025-06-16 00:22:17] Error en el bot: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750026135&from=1749858135 504 Gateway Time-out <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>futures.kraken.com | 504: Gateway time-out</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Gateway time-out</span>
+              <span class="code-label">Error code 504</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-06-15 22:22:16 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Madrid</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">futures.kraken.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a gateway time-out error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">95057712edccf778</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">83.39.43.68</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+[2025-06-16 00:32:17] Bot activo, sin señales – 00:32:17
+[2025-06-16 00:47:18] Bot activo, sin señales – 00:47:18
+[2025-06-16 01:02:20] Bot activo, sin señales – 01:02:19
+[2025-06-16 01:17:21] Bot activo, sin señales – 01:17:20
+[2025-06-16 01:32:22] Bot activo, sin señales – 01:32:22
+[2025-06-16 01:47:23] Bot activo, sin señales – 01:47:23
+[2025-06-16 02:02:24] Bot activo, sin señales – 02:02:23
+[2025-06-16 02:17:25] Bot activo, sin señales – 02:17:24
+[2025-06-16 02:32:25] Bot activo, sin señales – 02:32:25
+[2025-06-16 02:47:26] Bot activo, sin señales – 02:47:26
+[2025-06-16 03:02:27] Bot activo, sin señales – 03:02:27
+[2025-06-16 03:17:28] Bot activo, sin señales – 03:17:28
+[2025-06-16 03:32:29] Bot activo, sin señales – 03:32:28
+[2025-06-16 03:47:30] Bot activo, sin señales – 03:47:29
+[2025-06-16 04:02:30] Bot activo, sin señales – 04:02:30
+[2025-06-16 04:17:31] Bot activo, sin señales – 04:17:31
+[2025-06-16 04:32:33] Bot activo, sin señales – 04:32:32
+[2025-06-16 04:47:34] Bot activo, sin señales – 04:47:33
+[2025-06-16 05:02:35] Bot activo, sin señales – 05:02:34
+[2025-06-16 05:17:37] Bot activo, sin señales – 05:17:36
+[2025-06-16 05:32:38] Bot activo, sin señales – 05:32:37
+[2025-06-16 05:47:39] Bot activo, sin señales – 05:47:39
+[2025-06-16 06:02:40] Bot activo, sin señales – 06:02:39
+[2025-06-16 06:17:41] Bot activo, sin señales – 06:17:41
+[2025-06-16 06:32:42] Bot activo, sin señales – 06:32:41
+[2025-06-16 06:47:43] Bot activo, sin señales – 06:47:42
+[2025-06-16 07:02:44] Bot activo, sin señales – 07:02:43
+[2025-06-16 07:17:45] Bot activo, sin señales – 07:17:44
+[2025-06-16 07:32:45] Bot activo, sin señales – 07:32:45
+[2025-06-16 07:47:46] Bot activo, sin señales – 07:47:46
+[2025-06-16 08:02:48] Bot activo, sin señales – 08:02:47
+[2025-06-16 08:17:48] Bot activo, sin señales – 08:17:48
+[2025-06-16 08:32:49] Bot activo, sin señales – 08:32:49
+[2025-06-16 08:47:50] Bot activo, sin señales – 08:47:50
+[2025-06-16 09:02:51] Bot activo, sin señales – 09:02:50
+[2025-06-16 09:17:52] Bot activo, sin señales – 09:17:51
+[2025-06-16 09:32:53] Bot activo, sin señales – 09:32:52
+[2025-06-16 09:47:53] Bot activo, sin señales – 09:47:53
+[2025-06-16 10:02:54] Bot activo, sin señales – 10:02:54
+[2025-06-16 10:17:55] Bot activo, sin señales – 10:17:55
+[2025-06-16 10:32:56] Bot activo, sin señales – 10:32:55
+[2025-06-16 10:47:56] Bot activo, sin señales – 10:47:56
+[2025-06-16 11:02:58] Bot activo, sin señales – 11:02:58
+[2025-06-16 11:17:59] Bot activo, sin señales – 11:17:59
+[2025-06-16 11:33:00] Bot activo, sin señales – 11:33:00
+[2025-06-16 11:48:01] Bot activo, sin señales – 11:48:00
+[2025-06-16 12:03:02] 🟢 LONG ejecutada en BTC/USD:USD
+Cantidad: 0.002 BTC
+[2025-06-16 12:08:02] Bot activo, sin señales – 12:08:02
+[2025-06-16 12:23:03] Bot activo, sin señales – 12:23:03
+[2025-06-16 12:38:04] Bot activo, sin señales – 12:38:04
+[2025-06-16 12:53:05] Bot activo, sin señales – 12:53:04
+[2025-06-16 13:08:06] Bot activo, sin señales – 13:08:05
+[2025-06-16 13:23:07] Bot activo, sin señales – 13:23:06
+[2025-06-16 13:33:08] 🟢 LONG ejecutada en BTC/USD:USD
+Cantidad: 0.002 BTC
+[2025-06-16 13:38:09] Bot activo, sin señales – 13:38:08
+[2025-06-16 13:53:10] Bot activo, sin señales – 13:53:10
+[2025-06-16 14:08:11] Bot activo, sin señales – 14:08:11
+[2025-06-16 14:23:12] Bot activo, sin señales – 14:23:12
+[2025-06-16 14:38:13] Bot activo, sin señales – 14:38:13
+[2025-06-16 14:53:15] Error en el bot: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750078393&from=1749910393 504 Gateway Time-out <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>futures.kraken.com | 504: Gateway time-out</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Gateway time-out</span>
+              <span class="code-label">Error code 504</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-06-16 12:53:14 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Madrid</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">futures.kraken.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a gateway time-out error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">950a72e7fc83f778</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">83.39.43.68</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+[2025-06-16 14:58:15] Bot activo, sin señales – 14:58:15
+[2025-06-16 15:13:17] Bot activo, sin señales – 15:13:16
+[2025-06-16 15:28:18] Bot activo, sin señales – 15:28:17
+[2025-06-16 15:43:20] Bot activo, sin señales – 15:43:19
+[2025-06-16 15:58:21] Bot activo, sin señales – 15:58:20
+[2025-06-16 16:13:21] Bot activo, sin señales – 16:13:21
+[2025-06-16 16:28:23] Bot activo, sin señales – 16:28:22
+[2025-06-16 16:43:24] Bot activo, sin señales – 16:43:23
+[2025-06-16 16:58:25] Bot activo, sin señales – 16:58:25
+[2025-06-16 17:13:26] Bot activo, sin señales – 17:13:25
+[2025-06-16 17:28:27] Bot activo, sin señales – 17:28:26
+[2025-06-16 17:43:29] 🟢 LONG ejecutada en BTC/USD:USD
+Cantidad: 0.002 BTC
+[2025-06-16 17:48:29] Bot activo, sin señales – 17:48:29
+[2025-06-16 18:03:30] Bot activo, sin señales – 18:03:30
+[2025-06-16 18:18:31] Bot activo, sin señales – 18:18:31
+[2025-06-16 18:33:32] Bot activo, sin señales – 18:33:32
+[2025-06-16 18:48:33] Bot activo, sin señales – 18:48:33
+[2025-06-16 19:03:34] Bot activo, sin señales – 19:03:34
+[2025-06-16 19:18:35] Bot activo, sin señales – 19:18:35
+[2025-06-16 19:33:36] Bot activo, sin señales – 19:33:36
+[2025-06-16 19:48:37] Bot activo, sin señales – 19:48:37
+[2025-06-16 20:03:39] Bot activo, sin señales – 20:03:39
+[2025-06-16 20:09:20] Bot iniciado
+[2025-06-16 20:09:21] Error en el bot: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750097360&from=1749929360 504 Gateway Time-out <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>futures.kraken.com | 504: Gateway time-out</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Gateway time-out</span>
+              <span class="code-label">Error code 504</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-06-16 18:09:20 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Madrid</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">futures.kraken.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a gateway time-out error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">950c41f1fd1b0362</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">83.39.43.68</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+[2025-06-16 20:24:22] Bot activo, sin señales – 20:24:22
+[2025-06-16 20:33:33] ⚡ Bot RSI iniciado – 20:33:33
+[2025-06-16 20:48:35] ✅ Bot activo, sin señales – 20:48:34
+[2025-06-16 21:03:36] ✅ Bot activo, sin señales – 21:03:35
+[2025-06-16 21:18:37] ✅ Bot activo, sin señales – 21:18:37
+[2025-06-16 21:33:38] ✅ Bot activo, sin señales – 21:33:38
+[2025-06-16 21:48:41] ✅ Bot activo, sin señales – 21:48:40
+[2025-06-16 22:03:43] ✅ Bot activo, sin señales – 22:03:41
+[2025-06-16 22:18:45] ✅ Bot activo, sin señales – 22:18:44
+[2025-06-16 22:20:32] ⚡ Bot RSI iniciado – 22:20:31
+[2025-06-16 22:35:35] ✅ Bot activo, sin señales – 22:35:34
+[2025-06-16 22:50:36] ✅ Bot activo, sin señales – 22:50:35
+[2025-06-16 23:05:37] ✅ Bot activo, sin señales – 23:05:37
+[2025-06-16 23:20:38] ✅ Bot activo, sin señales – 23:20:38
+[2025-06-16 23:35:40] ✅ Bot activo, sin señales – 23:35:39
+[2025-06-16 23:50:41] ✅ Bot activo, sin señales – 23:50:41
+[2025-06-17 00:05:42] ✅ Bot activo, sin señales – 00:05:42
+[2025-06-17 00:20:43] ✅ Bot activo, sin señales – 00:20:42
+[2025-06-17 00:35:44] ✅ Bot activo, sin señales – 00:35:43
+[2025-06-17 00:50:44] ✅ Bot activo, sin señales – 00:50:44
+[2025-06-17 01:05:46] ✅ Bot activo, sin señales – 01:05:45
+[2025-06-17 01:20:46] ✅ Bot activo, sin señales – 01:20:46
+[2025-06-17 01:35:47] ✅ Bot activo, sin señales – 01:35:47
+[2025-06-17 01:50:48] ✅ Bot activo, sin señales – 01:50:48
+[2025-06-17 02:05:49] ✅ Bot activo, sin señales – 02:05:49
+[2025-06-17 02:20:50] ✅ Bot activo, sin señales – 02:20:50
+[2025-06-17 02:35:52] ✅ Bot activo, sin señales – 02:35:51
+[2025-06-17 02:50:52] ✅ Bot activo, sin señales – 02:50:52
+[2025-06-17 03:05:53] ✅ Bot activo, sin señales – 03:05:53
+[2025-06-17 03:20:55] ✅ Bot activo, sin señales – 03:20:54
+[2025-06-17 03:35:56] ✅ Bot activo, sin señales – 03:35:55
+[2025-06-17 03:50:57] ✅ Bot activo, sin señales – 03:50:56
+[2025-06-17 04:05:58] ✅ Bot activo, sin señales – 04:05:58
+[2025-06-17 04:20:59] ✅ Bot activo, sin señales – 04:20:59
+[2025-06-17 04:36:00] ✅ Bot activo, sin señales – 04:36:00
+[2025-06-17 04:51:01] ✅ Bot activo, sin señales – 04:51:01
+[2025-06-17 05:06:02] ✅ Bot activo, sin señales – 05:06:02
+[2025-06-17 05:21:03] ✅ Bot activo, sin señales – 05:21:02
+[2025-06-17 05:36:03] ✅ Bot activo, sin señales – 05:36:03
+[2025-06-17 05:51:04] ✅ Bot activo, sin señales – 05:51:04
+[2025-06-17 06:06:05] ✅ Bot activo, sin señales – 06:06:05
+[2025-06-17 06:21:06] ✅ Bot activo, sin señales – 06:21:06
+[2025-06-17 06:36:07] ✅ Bot activo, sin señales – 06:36:07
+[2025-06-17 06:51:09] ✅ Bot activo, sin señales – 06:51:08
+[2025-06-17 07:06:09] ✅ Bot activo, sin señales – 07:06:09
+[2025-06-17 07:21:10] ✅ Bot activo, sin señales – 07:21:10
+[2025-06-17 07:31:12] Error general: name 'ICON' is not defined
+[2025-06-17 07:36:13] ✅ Bot activo, sin señales – 07:36:12
+[2025-06-17 07:51:14] ✅ Bot activo, sin señales – 07:51:13
+[2025-06-17 08:06:16] ✅ Bot activo, sin señales – 08:06:15
+[2025-06-17 08:11:18] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750140676&from=1749972676 504 Gateway Time-out <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>futures.kraken.com | 504: Gateway time-out</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Gateway time-out</span>
+              <span class="code-label">Error code 504</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-06-17 06:11:16 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Madrid</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">futures.kraken.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a gateway time-out error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">951063755cd5cfaa</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">83.39.43.68</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_504&utm_campaign=futures.kraken.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+[2025-06-17 08:21:19] ✅ Bot activo, sin señales – 08:21:18
+[2025-06-17 08:36:20] ✅ Bot activo, sin señales – 08:36:20
+[2025-06-17 08:51:21] ✅ Bot activo, sin señales – 08:51:21
+[2025-06-17 09:06:22] ✅ Bot activo, sin señales – 09:06:22
+[2025-06-17 09:11:22] Error general: object of type 'NoneType' has no len()
+[2025-06-17 09:16:23] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750144582&from=1749976582 503 Service Unavailable Service Unavailable
+[2025-06-17 09:21:23] ✅ Bot activo, sin señales – 09:21:23
+[2025-06-17 09:36:24] ✅ Bot activo, sin señales – 09:36:24
+[2025-06-17 09:51:25] ✅ Bot activo, sin señales – 09:51:25
+[2025-06-17 10:06:26] ✅ Bot activo, sin señales – 10:06:26
+[2025-06-17 10:21:27] ✅ Bot activo, sin señales – 10:21:27
+[2025-06-17 10:36:28] ✅ Bot activo, sin señales – 10:36:27
+[2025-06-17 10:41:28] Error general: name 'ICON' is not defined
+[2025-06-17 10:51:29] ✅ Bot activo, sin señales – 10:51:29
+[2025-06-17 11:06:30] ✅ Bot activo, sin señales – 11:06:30
+[2025-06-17 11:21:31] ✅ Bot activo, sin señales – 11:21:31
+[2025-06-17 11:36:32] ✅ Bot activo, sin señales – 11:36:31
+[2025-06-17 11:51:33] ✅ Bot activo, sin señales – 11:51:32
+[2025-06-17 12:06:34] ✅ Bot activo, sin señales – 12:06:33
+[2025-06-17 12:21:35] ✅ Bot activo, sin señales – 12:21:34
+[2025-06-17 12:36:36] ✅ Bot activo, sin señales – 12:36:35
+[2025-06-17 12:51:37] ✅ Bot activo, sin señales – 12:51:36
+[2025-06-17 13:06:38] ✅ Bot activo, sin señales – 13:06:37
+[2025-06-17 13:21:39] ✅ Bot activo, sin señales – 13:21:38
+[2025-06-17 13:36:40] ✅ Bot activo, sin señales – 13:36:39
+[2025-06-17 13:56:39] ✅ Bot activo, sin señales – 13:56:38
+[2025-06-17 14:11:40] ✅ Bot activo, sin señales – 14:11:39
+[2025-06-17 14:26:41] ✅ Bot activo, sin señales – 14:26:40
+[2025-06-17 14:41:42] ✅ Bot activo, sin señales – 14:41:41
+[2025-06-17 14:56:43] Error general: name 'ICON' is not defined
+[2025-06-17 15:01:44] ✅ Bot activo, sin señales – 15:01:44
+[2025-06-17 15:16:45] ✅ Bot activo, sin señales – 15:16:45
+[2025-06-17 15:31:46] ✅ Bot activo, sin señales – 15:31:46
+[2025-06-17 15:46:47] ✅ Bot activo, sin señales – 15:46:47
+[2025-06-17 16:01:49] ✅ Bot activo, sin señales – 16:01:48
+[2025-06-17 16:16:50] ✅ Bot activo, sin señales – 16:16:50
+[2025-06-17 16:21:51] Error general: name 'ICON' is not defined
+[2025-06-17 16:31:52] ✅ Bot activo, sin señales – 16:31:52
+[2025-06-17 16:46:53] ✅ Bot activo, sin señales – 16:46:53
+[2025-06-17 17:01:54] ✅ Bot activo, sin señales – 17:01:54
+[2025-06-17 17:16:56] ✅ Bot activo, sin señales – 17:16:55
+[2025-06-17 17:31:57] ✅ Bot activo, sin señales – 17:31:56
+[2025-06-17 17:46:58] ✅ Bot activo, sin señales – 17:46:57
+[2025-06-17 18:01:59] ✅ Bot activo, sin señales – 18:01:58
+[2025-06-17 18:17:00] ✅ Bot activo, sin señales – 18:16:59
+[2025-06-17 18:32:01] ✅ Bot activo, sin señales – 18:32:01
+[2025-06-17 18:39:22] ⚡ Bot RSI iniciado – 18:39:22
+[2025-06-17 18:44:24] Error general: name 'ICON' is not defined
+[2025-06-17 18:54:25] ✅ Bot activo, sin señales – 18:54:24
+[2025-06-17 19:09:26] ✅ Bot activo, sin señales – 19:09:25
+[2025-06-17 19:24:27] ✅ Bot activo, sin señales – 19:24:26
+[19:38:19] Bot iniciado
+[19:53:20] ✅ Bot activo, sin señales – 19:53:20
+[20:08:21] ✅ Bot activo, sin señales – 20:08:20
+[20:23:22] ✅ Bot activo, sin señales – 20:23:21
+[20:28:23] 🔴 SHORT ejecutada en BTC/USD:USD @ 103785.75 – 20:28:23
+[20:38:24] ✅ Bot activo, sin señales – 20:38:24
+[20:53:24] ✅ Bot activo, sin señales – 20:53:24
+[21:08:25] ✅ Bot activo, sin señales – 21:08:25
+[21:23:26] ✅ Bot activo, sin señales – 21:23:26
+[21:38:27] ✅ Bot activo, sin señales – 21:38:27
+[21:53:28] ✅ Bot activo, sin señales – 21:53:27
+[22:08:29] ✅ Bot activo, sin señales – 22:08:28
+[22:23:30] ✅ Bot activo, sin señales – 22:23:29
+[22:38:31] ✅ Bot activo, sin señales – 22:38:30
+[22:53:32] ✅ Bot activo, sin señales – 22:53:31
+[23:08:32] ✅ Bot activo, sin señales – 23:08:32
+[23:23:34] ✅ Bot activo, sin señales – 23:23:33
+[23:38:34] ✅ Bot activo, sin señales – 23:38:34
+[23:53:36] ✅ Bot activo, sin señales – 23:53:36
+[00:08:37] ✅ Bot activo, sin señales – 00:08:37
+[00:23:38] ✅ Bot activo, sin señales – 00:23:38
+[00:38:39] ✅ Bot activo, sin señales – 00:38:39
+[00:53:40] ✅ Bot activo, sin señales – 00:53:39
+[01:08:41] ✅ Bot activo, sin señales – 01:08:40
+[01:23:42] ✅ Bot activo, sin señales – 01:23:41
+[01:38:42] ✅ Bot activo, sin señales – 01:38:42
+[01:53:43] ✅ Bot activo, sin señales – 01:53:43
+[02:08:44] ✅ Bot activo, sin señales – 02:08:44
+[02:23:46] ✅ Bot activo, sin señales – 02:23:44
+[02:38:47] ✅ Bot activo, sin señales – 02:38:46
+[02:53:47] ✅ Bot activo, sin señales – 02:53:47
+[03:08:49] ✅ Bot activo, sin señales – 03:08:48
+[03:23:51] ✅ Bot activo, sin señales – 03:23:50
+[03:38:52] ✅ Bot activo, sin señales – 03:38:51
+[03:53:52] ✅ Bot activo, sin señales – 03:53:52
+[04:08:54] ✅ Bot activo, sin señales – 04:08:53
+[04:23:56] ✅ Bot activo, sin señales – 04:23:55
+[04:38:56] ✅ Bot activo, sin señales – 04:38:56
+[04:53:57] ✅ Bot activo, sin señales – 04:53:57
+[05:08:58] ✅ Bot activo, sin señales – 05:08:57
+[05:23:59] ✅ Bot activo, sin señales – 05:23:58
+[05:39:00] ✅ Bot activo, sin señales – 05:38:59
+[05:54:01] ✅ Bot activo, sin señales – 05:54:00
+[06:09:02] ✅ Bot activo, sin señales – 06:09:01
+[06:24:03] ✅ Bot activo, sin señales – 06:24:02
+[06:39:03] ✅ Bot activo, sin señales – 06:39:03
+[06:54:04] ✅ Bot activo, sin señales – 06:54:04
+[07:09:05] ✅ Bot activo, sin señales – 07:09:05
+[07:24:07] ✅ Bot activo, sin señales – 07:24:06
+[07:39:07] ✅ Bot activo, sin señales – 07:39:07
+[07:54:08] ✅ Bot activo, sin señales – 07:54:08
+[08:04:10] 🔴 SHORT ejecutada en BTC/USD:USD @ 105430.50 – 08:04:09
+[08:09:11] ✅ Bot activo, sin señales – 08:09:10
+[08:24:11] ✅ Bot activo, sin señales – 08:24:11
+[08:29:13] 🔴 SHORT ejecutada en BTC/USD:USD @ 105361.00 – 08:29:13
+[08:39:14] ✅ Bot activo, sin señales – 08:39:13
+[08:54:14] ✅ Bot activo, sin señales – 08:54:14
+[09:09:16] ✅ Bot activo, sin señales – 09:09:15
+[09:24:16] ✅ Bot activo, sin señales – 09:24:16
+[09:39:18] ✅ Bot activo, sin señales – 09:39:17
+[09:54:19] ✅ Bot activo, sin señales – 09:54:18
+[10:09:20] ✅ Bot activo, sin señales – 10:09:20
+[10:24:21] ✅ Bot activo, sin señales – 10:24:20
+[10:39:22] ✅ Bot activo, sin señales – 10:39:22
+[10:54:24] ✅ Bot activo, sin señales – 10:54:23
+[11:04:26] 🔴 SHORT ejecutada en BTC/USD:USD @ 105057.50 – 11:04:26
+[11:09:27] ✅ Bot activo, sin señales – 11:09:26
+[11:24:27] ✅ Bot activo, sin señales – 11:24:27
+[11:39:28] ✅ Bot activo, sin señales – 11:39:28
+[11:54:29] ✅ Bot activo, sin señales – 11:54:29
+[12:09:30] ✅ Bot activo, sin señales – 12:09:30
+[12:24:31] ✅ Bot activo, sin señales – 12:24:31
+[12:39:32] ✅ Bot activo, sin señales – 12:39:31
+[12:54:32] ✅ Bot activo, sin señales – 12:54:32
+[13:09:33] ✅ Bot activo, sin señales – 13:09:33
+[13:24:34] ✅ Bot activo, sin señales – 13:24:34
+[13:39:35] ✅ Bot activo, sin señales – 13:39:35
+[13:54:36] ✅ Bot activo, sin señales – 13:54:36
+[14:09:37] ✅ Bot activo, sin señales – 14:09:37
+[14:24:38] ✅ Bot activo, sin señales – 14:24:38
+[14:39:39] ✅ Bot activo, sin señales – 14:39:39
+[14:49:41] 🔴 SHORT ejecutada en BTC/USD:USD @ 104542.50 – 14:49:41
+[14:54:42] ✅ Bot activo, sin señales – 14:54:41
+[15:09:43] ✅ Bot activo, sin señales – 15:09:42
+[15:24:45] ✅ Bot activo, sin señales – 15:24:44
+[15:39:46] ✅ Bot activo, sin señales – 15:39:45
+[15:54:47] ✅ Bot activo, sin señales – 15:54:46
+[16:09:48] ✅ Bot activo, sin señales – 16:09:47
+[16:24:49] ✅ Bot activo, sin señales – 16:24:49
+[16:39:50] ✅ Bot activo, sin señales – 16:39:50
+[16:54:51] ✅ Bot activo, sin señales – 16:54:50
+[17:09:52] ✅ Bot activo, sin señales – 17:09:51
+[17:14:53] 🔴 SHORT ejecutada en BTC/USD:USD @ 104558.75 – 17:14:53
+[17:24:54] ✅ Bot activo, sin señales – 17:24:54
+[17:39:54] ✅ Bot activo, sin señales – 17:39:54
+[17:54:55] ✅ Bot activo, sin señales – 17:54:55
+[18:09:56] ✅ Bot activo, sin señales – 18:09:55
+[18:24:57] 🔴 SHORT ejecutada en BTC/USD:USD @ 104437.00 – 18:24:57
+[18:29:58] ✅ Bot activo, sin señales – 18:29:57
+[18:45:00] ✅ Bot activo, sin señales – 18:45:00
+[19:00:01] ✅ Bot activo, sin señales – 19:00:01
+[19:15:02] ✅ Bot activo, sin señales – 19:15:01
+[19:30:02] ✅ Bot activo, sin señales – 19:30:02
+[19:45:03] ✅ Bot activo, sin señales – 19:45:02
+[20:00:04] ✅ Bot activo, sin señales – 20:00:04
+[20:05:06] 🔴 SHORT ejecutada en BTC/USD:USD @ 104088.00 – 20:05:05
+[20:10:07] 🔴 SHORT ejecutada en BTC/USD:USD @ 104189.75 – 20:10:07
+[20:15:09] ✅ Bot activo, sin señales – 20:15:08
+[20:30:10] ✅ Bot activo, sin señales – 20:30:09
+[20:45:11] ✅ Bot activo, sin señales – 20:45:10
+[21:00:12] ✅ Bot activo, sin señales – 21:00:11
+[21:15:12] ✅ Bot activo, sin señales – 21:15:12
+[21:20:14] Error orden: krakenfutures: createOrder failed due to insufficientAvailableFunds
+[21:30:16] ✅ Bot activo, sin señales – 21:30:14
+[21:45:17] ✅ Bot activo, sin señales – 21:45:16
+[22:00:17] ✅ Bot activo, sin señales – 22:00:17
+[22:15:18] ✅ Bot activo, sin señales – 22:15:18
+[22:30:19] ✅ Bot activo, sin señales – 22:30:19
+[22:45:20] ✅ Bot activo, sin señales – 22:45:20
+[23:00:20] ✅ Bot activo, sin señales – 23:00:20
+[23:15:21] ✅ Bot activo, sin señales – 23:15:21
+[23:30:22] ✅ Bot activo, sin señales – 23:30:22
+[23:45:23] ✅ Bot activo, sin señales – 23:45:22
+[00:00:23] ✅ Bot activo, sin señales – 00:00:23
+[00:15:24] ✅ Bot activo, sin señales – 00:15:24
+[00:30:25] ✅ Bot activo, sin señales – 00:30:24
+[00:45:25] ✅ Bot activo, sin señales – 00:45:25
+[01:00:26] ✅ Bot activo, sin señales – 01:00:26
+[01:15:26] ✅ Bot activo, sin señales – 01:15:26
+[01:30:27] ✅ Bot activo, sin señales – 01:30:26
+[01:45:28] ✅ Bot activo, sin señales – 01:45:27
+[02:00:28] ✅ Bot activo, sin señales – 02:00:28
+[02:15:29] ✅ Bot activo, sin señales – 02:15:28
+[02:30:29] ✅ Bot activo, sin señales – 02:30:29
+[02:45:30] ✅ Bot activo, sin señales – 02:45:30
+[03:00:31] ✅ Bot activo, sin señales – 03:00:31
+[03:15:32] ✅ Bot activo, sin señales – 03:15:31
+[03:30:32] ✅ Bot activo, sin señales – 03:30:32
+[03:45:33] ✅ Bot activo, sin señales – 03:45:33
+[04:00:33] ✅ Bot activo, sin señales – 04:00:33
+[04:15:34] ✅ Bot activo, sin señales – 04:15:34
+[04:30:35] ✅ Bot activo, sin señales – 04:30:34
+[04:45:35] ✅ Bot activo, sin señales – 04:45:35
+[05:00:36] ✅ Bot activo, sin señales – 05:00:36
+[05:15:37] ✅ Bot activo, sin señales – 05:15:36
+[05:30:37] ✅ Bot activo, sin señales – 05:30:37
+[05:45:38] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750304738&from=1750136738
+[05:50:39] ✅ Bot activo, sin señales – 05:50:39
+[06:05:40] ✅ Bot activo, sin señales – 06:05:39
+[06:20:41] ✅ Bot activo, sin señales – 06:20:40
+[06:35:42] ✅ Bot activo, sin señales – 06:35:41
+[06:50:43] ✅ Bot activo, sin señales – 06:50:42
+[07:05:44] ✅ Bot activo, sin señales – 07:05:44
+[07:20:45] ✅ Bot activo, sin señales – 07:20:45
+[07:35:46] ✅ Bot activo, sin señales – 07:35:45
+[07:50:46] ✅ Bot activo, sin señales – 07:50:46
+[08:05:47] ✅ Bot activo, sin señales – 08:05:47
+[08:20:48] ✅ Bot activo, sin señales – 08:20:48
+[08:35:49] ✅ Bot activo, sin señales – 08:35:49
+[08:50:50] ✅ Bot activo, sin señales – 08:50:49
+[09:05:50] ✅ Bot activo, sin señales – 09:05:50
+[09:20:51] ✅ Bot activo, sin señales – 09:20:51
+[09:35:52] ✅ Bot activo, sin señales – 09:35:52
+[09:50:52] ✅ Bot activo, sin señales – 09:50:52
+[10:05:53] ✅ Bot activo, sin señales – 10:05:53
+[10:20:54] ✅ Bot activo, sin señales – 10:20:54
+[10:35:55] ✅ Bot activo, sin señales – 10:35:54
+[10:50:55] ✅ Bot activo, sin señales – 10:50:55
+[11:05:56] ✅ Bot activo, sin señales – 11:05:56
+[11:20:57] ✅ Bot activo, sin señales – 11:20:57
+[11:35:58] ✅ Bot activo, sin señales – 11:35:58
+[11:50:59] ✅ Bot activo, sin señales – 11:50:59
+[12:06:00] ✅ Bot activo, sin señales – 12:05:59
+[12:21:00] ✅ Bot activo, sin señales – 12:21:00
+[12:36:01] ✅ Bot activo, sin señales – 12:36:01
+[12:51:02] ✅ Bot activo, sin señales – 12:51:02
+[13:06:03] ✅ Bot activo, sin señales – 13:06:02
+[13:21:03] ✅ Bot activo, sin señales – 13:21:03
+[13:36:04] ✅ Bot activo, sin señales – 13:36:04
+[13:51:05] ✅ Bot activo, sin señales – 13:51:04
+[14:06:05] ✅ Bot activo, sin señales – 14:06:05
+[14:21:06] ✅ Bot activo, sin señales – 14:21:06
+[14:36:07] ✅ Bot activo, sin señales – 14:36:07
+[14:46:09] 🔴 SHORT ejecutada en BTC/USD:USD @ 104731.00 – 14:46:08
+[14:51:09] ✅ Bot activo, sin señales – 14:51:09
+[15:06:10] ✅ Bot activo, sin señales – 15:06:10
+[15:21:10] ✅ Bot activo, sin señales – 15:21:10
+[15:36:11] ✅ Bot activo, sin señales – 15:36:11
+[15:51:12] ✅ Bot activo, sin señales – 15:51:12
+[16:06:13] ✅ Bot activo, sin señales – 16:06:13
+[16:21:13] ✅ Bot activo, sin señales – 16:21:13
+[16:36:14] ✅ Bot activo, sin señales – 16:36:14
+[16:51:15] ✅ Bot activo, sin señales – 16:51:15
+[17:06:16] ✅ Bot activo, sin señales – 17:06:15
+[17:21:16] ✅ Bot activo, sin señales – 17:21:16
+[17:36:17] ✅ Bot activo, sin señales – 17:36:17
+[17:51:18] ✅ Bot activo, sin señales – 17:51:18
+[18:01:20] 🔴 SHORT ejecutada en BTC/USD:USD @ 104170.50 – 18:01:20
+[18:06:20] ✅ Bot activo, sin señales – 18:06:20
+[18:16:22] 🔴 SHORT ejecutada en BTC/USD:USD @ 104321.00 – 18:16:22
+[18:21:23] ✅ Bot activo, sin señales – 18:21:22
+[18:27:24] Bot iniciado
+[18:42:25] ✅ Bot activo, sin señales – 18:42:25
+[18:57:26] ✅ Bot activo, sin señales – 18:57:25
+[19:12:26] ✅ Bot activo, sin señales – 19:12:26
+[19:27:27] ✅ Bot activo, sin señales – 19:27:27
+[19:42:27] ✅ Bot activo, sin señales – 19:42:27
+[19:57:29] ✅ Bot activo, sin señales – 19:57:28
+[20:12:30] ✅ Bot activo, sin señales – 20:12:29
+[20:27:31] ✅ Bot activo, sin señales – 20:27:30
+[20:37:32] Error orden: 'type'
+[20:42:33] ✅ Bot activo, sin señales – 20:42:32
+[20:57:33] ✅ Bot activo, sin señales – 20:57:33
+[21:12:35] ✅ Bot activo, sin señales – 21:12:34
+[21:27:35] ✅ Bot activo, sin señales – 21:27:35
+[21:42:36] ✅ Bot activo, sin señales – 21:42:36
+[21:57:37] ✅ Bot activo, sin señales – 21:57:37
+[22:12:39] ✅ Bot activo, sin señales – 22:12:38
+[22:27:40] ✅ Bot activo, sin señales – 22:27:40
+[22:42:41] ✅ Bot activo, sin señales – 22:42:40
+[22:57:41] ✅ Bot activo, sin señales – 22:57:41
+[23:17:40] ✅ Bot activo, sin señales – 23:17:40
+[23:32:41] ✅ Bot activo, sin señales – 23:32:40
+[23:47:41] ✅ Bot activo, sin señales – 23:47:41
+[00:02:41] ✅ Bot activo, sin señales – 00:02:41
+[00:17:42] ✅ Bot activo, sin señales – 00:17:42
+[00:32:44] ✅ Bot activo, sin señales – 00:32:43
+[00:47:44] ✅ Bot activo, sin señales – 00:47:44
+[01:02:45] ✅ Bot activo, sin señales – 01:02:45
+[01:17:45] ✅ Bot activo, sin señales – 01:17:45
+[01:32:46] ✅ Bot activo, sin señales – 01:32:46
+[01:47:47] ✅ Bot activo, sin señales – 01:47:46
+[02:02:47] ✅ Bot activo, sin señales – 02:02:47
+[02:17:48] ✅ Bot activo, sin señales – 02:17:47
+[02:32:48] ✅ Bot activo, sin señales – 02:32:48
+[02:47:49] ✅ Bot activo, sin señales – 02:47:49
+[03:02:49] ✅ Bot activo, sin señales – 03:02:49
+[03:17:50] ✅ Bot activo, sin señales – 03:17:50
+[03:32:51] ✅ Bot activo, sin señales – 03:32:51
+[03:47:51] ✅ Bot activo, sin señales – 03:47:51
+[04:02:52] ✅ Bot activo, sin señales – 04:02:52
+[04:17:53] ✅ Bot activo, sin señales – 04:17:52
+[04:32:53] ✅ Bot activo, sin señales – 04:32:53
+[04:47:54] ✅ Bot activo, sin señales – 04:47:54
+[05:02:54] ✅ Bot activo, sin señales – 05:02:54
+[05:17:55] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750389475&from=1750221475
+[05:22:55] ✅ Bot activo, sin señales – 05:22:55
+[05:37:56] ✅ Bot activo, sin señales – 05:37:56
+[05:52:56] ✅ Bot activo, sin señales – 05:52:56
+[06:07:57] ✅ Bot activo, sin señales – 06:07:57
+[06:22:58] ✅ Bot activo, sin señales – 06:22:58
+[06:37:59] ✅ Bot activo, sin señales – 06:37:59
+[06:53:00] ✅ Bot activo, sin señales – 06:53:00
+[07:08:01] ✅ Bot activo, sin señales – 07:08:01
+[07:23:02] ✅ Bot activo, sin señales – 07:23:01
+[07:38:02] ✅ Bot activo, sin señales – 07:38:02
+[07:53:03] ✅ Bot activo, sin señales – 07:53:03
+[08:08:04] ✅ Bot activo, sin señales – 08:08:03
+[08:23:04] ✅ Bot activo, sin señales – 08:23:04
+[08:38:05] ✅ Bot activo, sin señales – 08:38:05
+[08:53:05] ✅ Bot activo, sin señales – 08:53:05
+[09:08:06] ✅ Bot activo, sin señales – 09:08:06
+[09:23:07] ✅ Bot activo, sin señales – 09:23:07
+[09:38:07] ✅ Bot activo, sin señales – 09:38:07
+[09:53:08] ✅ Bot activo, sin señales – 09:53:08
+[10:08:09] ✅ Bot activo, sin señales – 10:08:08
+[10:23:09] ✅ Bot activo, sin señales – 10:23:09
+[10:38:10] ✅ Bot activo, sin señales – 10:38:10
+[10:53:11] ✅ Bot activo, sin señales – 10:53:11
+[11:08:12] ✅ Bot activo, sin señales – 11:08:11
+[11:23:12] ✅ Bot activo, sin señales – 11:23:12
+[11:38:13] ✅ Bot activo, sin señales – 11:38:13
+[11:53:13] ✅ Bot activo, sin señales – 11:53:13
+[12:08:14] ✅ Bot activo, sin señales – 12:08:14
+[12:23:15] ✅ Bot activo, sin señales – 12:23:14
+[12:38:15] ✅ Bot activo, sin señales – 12:38:15
+[12:53:16] ✅ Bot activo, sin señales – 12:53:15
+[13:08:16] ✅ Bot activo, sin señales – 13:08:16
+[13:23:17] ✅ Bot activo, sin señales – 13:23:17
+[13:38:18] ✅ Bot activo, sin señales – 13:38:17
+[13:53:18] ✅ Bot activo, sin señales – 13:53:18
+[14:08:19] ✅ Bot activo, sin señales – 14:08:19
+[14:23:20] ✅ Bot activo, sin señales – 14:23:20
+[14:38:21] ✅ Bot activo, sin señales – 14:38:20
+[14:53:21] ✅ Bot activo, sin señales – 14:53:21
+[15:08:22] ✅ Bot activo, sin señales – 15:08:22
+[15:23:23] ✅ Bot activo, sin señales – 15:23:22
+[15:38:24] ✅ Bot activo, sin señales – 15:38:23
+[15:53:25] ✅ Bot activo, sin señales – 15:53:24
+[16:08:25] ✅ Bot activo, sin señales – 16:08:25
+[16:23:26] ✅ Bot activo, sin señales – 16:23:26
+[16:38:26] ✅ Bot activo, sin señales – 16:38:26
+[16:53:28] ✅ Bot activo, sin señales – 16:53:28
+[17:08:29] ✅ Bot activo, sin señales – 17:08:29
+[17:23:30] ✅ Bot activo, sin señales – 17:23:30
+[17:38:31] ✅ Bot activo, sin señales – 17:38:30
+[17:53:32] ✅ Bot activo, sin señales – 17:53:31
+[18:08:32] ✅ Bot activo, sin señales – 18:08:32
+[18:23:33] ✅ Bot activo, sin señales – 18:23:33
+[18:38:35] ✅ Bot activo, sin señales – 18:38:35
+[18:53:37] ✅ Bot activo, sin señales – 18:53:37
+[19:08:38] ✅ Bot activo, sin señales – 19:08:38
+[19:23:39] ✅ Bot activo, sin señales – 19:23:39
+[19:38:40] ✅ Bot activo, sin señales – 19:38:40
+[19:53:41] ✅ Bot activo, sin señales – 19:53:41
+[20:08:42] ✅ Bot activo, sin señales – 20:08:41
+[20:23:42] ✅ Bot activo, sin señales – 20:23:42
+[20:38:43] ✅ Bot activo, sin señales – 20:38:43
+[20:53:43] ✅ Bot activo, sin señales – 20:53:43
+[21:08:44] ✅ Bot activo, sin señales – 21:08:44
+[21:23:45] ✅ Bot activo, sin señales – 21:23:45
+[21:38:45] ✅ Bot activo, sin señales – 21:38:45
+[21:53:46] ✅ Bot activo, sin señales – 21:53:46
+[22:08:47] ✅ Bot activo, sin señales – 22:08:47
+[22:23:48] ✅ Bot activo, sin señales – 22:23:47
+[22:38:48] ✅ Bot activo, sin señales – 22:38:48
+[22:53:49] ✅ Bot activo, sin señales – 22:53:49
+[23:08:50] ✅ Bot activo, sin señales – 23:08:49
+[23:23:50] ✅ Bot activo, sin señales – 23:23:50
+[23:38:51] ✅ Bot activo, sin señales – 23:38:50
+[23:53:52] ✅ Bot activo, sin señales – 23:53:51
+[00:08:52] ✅ Bot activo, sin señales – 00:08:52
+[00:23:53] ✅ Bot activo, sin señales – 00:23:53
+[00:38:53] ✅ Bot activo, sin señales – 00:38:53
+[00:53:54] ✅ Bot activo, sin señales – 00:53:54
+[01:08:55] ✅ Bot activo, sin señales – 01:08:55
+[01:23:56] ✅ Bot activo, sin señales – 01:23:56
+[01:38:57] ✅ Bot activo, sin señales – 01:38:56
+[01:53:58] ✅ Bot activo, sin señales – 01:53:57
+[02:08:59] ✅ Bot activo, sin señales – 02:08:58
+[02:23:59] ✅ Bot activo, sin señales – 02:23:59
+[02:39:00] ✅ Bot activo, sin señales – 02:39:00
+[02:54:01] ✅ Bot activo, sin señales – 02:54:00
+[03:09:01] ✅ Bot activo, sin señales – 03:09:01
+[03:24:02] ✅ Bot activo, sin señales – 03:24:02
+[03:39:03] ✅ Bot activo, sin señales – 03:39:02
+[03:54:03] ✅ Bot activo, sin señales – 03:54:03
+[04:09:04] ✅ Bot activo, sin señales – 04:09:04
+[04:24:06] ✅ Bot activo, sin señales – 04:24:05
+[04:39:07] ✅ Bot activo, sin señales – 04:39:06
+[04:54:08] ✅ Bot activo, sin señales – 04:54:07
+[05:09:09] ✅ Bot activo, sin señales – 05:09:08
+[05:24:09] ✅ Bot activo, sin señales – 05:24:09
+[05:39:10] ✅ Bot activo, sin señales – 05:39:10
+[05:54:11] ✅ Bot activo, sin señales – 05:54:10
+[06:04:12] Error orden: 'type'
+[06:09:12] ✅ Bot activo, sin señales – 06:09:12
+[06:24:13] ✅ Bot activo, sin señales – 06:24:12
+[06:39:13] ✅ Bot activo, sin señales – 06:39:13
+[06:54:14] ✅ Bot activo, sin señales – 06:54:14
+[07:09:14] ✅ Bot activo, sin señales – 07:09:14
+[07:24:15] ✅ Bot activo, sin señales – 07:24:15
+[07:39:15] ✅ Bot activo, sin señales – 07:39:15
+[07:54:16] ✅ Bot activo, sin señales – 07:54:16
+[08:09:17] ✅ Bot activo, sin señales – 08:09:17
+[08:24:18] ✅ Bot activo, sin señales – 08:24:17
+[08:39:18] ✅ Bot activo, sin señales – 08:39:18
+[08:54:19] ✅ Bot activo, sin señales – 08:54:19
+[09:09:20] ✅ Bot activo, sin señales – 09:09:19
+[09:24:20] ✅ Bot activo, sin señales – 09:24:20
+[09:39:22] Error orden: 'type'
+[09:44:22] ✅ Bot activo, sin señales – 09:44:22
+[09:59:23] ✅ Bot activo, sin señales – 09:59:23
+[10:14:23] ✅ Bot activo, sin señales – 10:14:23
+[10:29:24] ✅ Bot activo, sin señales – 10:29:24
+[10:44:25] ✅ Bot activo, sin señales – 10:44:25
+[10:58:18] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750496141&from=1750328141
+[11:04:24] ✅ Bot activo, sin señales – 11:04:23
+[11:09:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750496964&from=1750328964
+[11:14:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750497274&from=1750329274
+[11:19:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750497574&from=1750329574
+[11:24:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750497874&from=1750329874
+[11:29:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750498174&from=1750330174
+[11:34:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750498474&from=1750330474
+[11:39:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750498774&from=1750330774
+[11:44:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750499074&from=1750331074
+[11:49:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750499374&from=1750331374
+[11:54:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750499674&from=1750331674
+[11:59:34] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750499974&from=1750331974
+[12:06:04] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750500274&from=1750332274
+[12:12:35] Error general: krakenfutures GET https://futures.kraken.com/api/charts/v1/trade/PF_XBTUSD/5m?to=1750500665&from=1750332665
+[12:17:35] ✅ Bot activo, sin señales – 12:17:35
+[12:32:36] ✅ Bot activo, sin señales – 12:32:36
+[12:47:37] ✅ Bot activo, sin señales – 12:47:36
+[12:52:38] Error orden: 'type'
+[13:02:39] ✅ Bot activo, sin señales – 13:02:38
+[13:17:39] ✅ Bot activo, sin señales – 13:17:39
+[13:26:50] Bot iniciado
+[13:32:40] ✅ Bot activo, sin señales – 13:32:40
+[13:41:51] ✅ Bot activo, sin señales – 13:41:51
+[13:47:41] ✅ Bot activo, sin señales – 13:47:40
+[13:56:52] ✅ Bot activo, sin señales – 13:56:52
+[14:02:41] ✅ Bot activo, sin señales – 14:02:41
+[14:11:53] ✅ Bot activo, sin señales – 14:11:53
+[14:17:42] ✅ Bot activo, sin señales – 14:17:42
+[14:26:54] Error orden: 'type'
+[14:31:55] ✅ Bot activo, sin señales – 14:31:54
+[14:32:43] ✅ Bot activo, sin señales – 14:32:43
+[14:36:56] Error orden: 'type'
+[14:37:44] Error orden: 'type'
+[14:46:56] ✅ Bot activo, sin señales – 14:46:56
+[14:47:45] ✅ Bot activo, sin señales – 14:47:45
+[15:01:57] ✅ Bot activo, sin señales – 15:01:57
+[15:16:58] ✅ Bot activo, sin señales – 15:16:57
+[15:31:58] ✅ Bot activo, sin señales – 15:31:58
+[15:46:59] ✅ Bot activo, sin señales – 15:46:59
+[16:02:00] ✅ Bot activo, sin señales – 16:02:00
+[16:17:01] ✅ Bot activo, sin señales – 16:17:01
+[16:32:02] ✅ Bot activo, sin señales – 16:32:02
+[16:47:03] ✅ Bot activo, sin señales – 16:47:02
+[17:02:04] ✅ Bot activo, sin señales – 17:02:03
+[17:17:04] ✅ Bot activo, sin señales – 17:17:04
+[17:32:06] Error orden: 'type'
+[17:37:06] ✅ Bot activo, sin señales – 17:37:06
+[17:52:07] ✅ Bot activo, sin señales – 17:52:06
+[18:02:08] Error orden: 'type'
+[18:07:08] ✅ Bot activo, sin señales – 18:07:08
+[18:22:09] ✅ Bot activo, sin señales – 18:22:08
+[18:37:10] ✅ Bot activo, sin señales – 18:37:09
+[18:52:10] ✅ Bot activo, sin señales – 18:52:10
+[18:57:11] Error orden: 'type'
+[19:07:12] ✅ Bot activo, sin señales – 19:07:12
+[19:12:13] Error orden: 'type'
+[19:22:14] ✅ Bot activo, sin señales – 19:22:13
+[19:37:14] ✅ Bot activo, sin señales – 19:37:14
+[19:52:15] ✅ Bot activo, sin señales – 19:52:15
+[20:07:16] ✅ Bot activo, sin señales – 20:07:16
+[20:22:17] ✅ Bot activo, sin señales – 20:22:16
+[20:37:17] ✅ Bot activo, sin señales – 20:37:17
+[20:47:18] Error orden: 'type'
+[20:52:19] ✅ Bot activo, sin señales – 20:52:19
+[21:07:20] ✅ Bot activo, sin señales – 21:07:19
+[21:22:20] ✅ Bot activo, sin señales – 21:22:20
+[21:37:21] ✅ Bot activo, sin señales – 21:37:21
+[21:52:22] ✅ Bot activo, sin señales – 21:52:21
+[22:07:23] ✅ Bot activo, sin señales – 22:07:22
+[22:22:24] ✅ Bot activo, sin señales – 22:22:24
+[22:37:25] ✅ Bot activo, sin señales – 22:37:24
+[22:52:25] ✅ Bot activo, sin señales – 22:52:25
+[23:07:26] ✅ Bot activo, sin señales – 23:07:26
+[23:22:26] ✅ Bot activo, sin señales – 23:22:26
+[23:37:27] ✅ Bot activo, sin señales – 23:37:27
+[23:52:28] ✅ Bot activo, sin señales – 23:52:27
+[00:07:28] ✅ Bot activo, sin señales – 00:07:28
+[00:22:29] ✅ Bot activo, sin señales – 00:22:29
+[00:37:29] ✅ Bot activo, sin señales – 00:37:29
+[00:52:30] ✅ Bot activo, sin señales – 00:52:30
+[01:07:31] ✅ Bot activo, sin señales – 01:07:31
+[01:22:31] ✅ Bot activo, sin señales – 01:22:31
+[01:37:32] ✅ Bot activo, sin señales – 01:37:32
+[01:52:33] ✅ Bot activo, sin señales – 01:52:32
+[02:07:33] ✅ Bot activo, sin señales – 02:07:33
+[02:22:34] ✅ Bot activo, sin señales – 02:22:34
+[02:37:35] ✅ Bot activo, sin señales – 02:37:35
+[02:52:36] ✅ Bot activo, sin señales – 02:52:35
+[03:07:36] ✅ Bot activo, sin señales – 03:07:36
+[03:22:37] ✅ Bot activo, sin señales – 03:22:37
+[03:37:38] ✅ Bot activo, sin señales – 03:37:38
+[03:52:39] ✅ Bot activo, sin señales – 03:52:39
+[04:07:39] ✅ Bot activo, sin señales – 04:07:39
+[04:22:40] ✅ Bot activo, sin señales – 04:22:40
+[04:37:41] ✅ Bot activo, sin señales – 04:37:40
+[04:52:42] ✅ Bot activo, sin señales – 04:52:41
+[05:07:42] ✅ Bot activo, sin señales – 05:07:42
+[05:22:43] ✅ Bot activo, sin señales – 05:22:43
+[05:37:43] ✅ Bot activo, sin señales – 05:37:43
+[05:57:44] ✅ Bot activo, sin señales – 05:57:43
+[06:12:44] ✅ Bot activo, sin señales – 06:12:44
+[06:27:45] ✅ Bot activo, sin señales – 06:27:45
+[06:42:46] ✅ Bot activo, sin señales – 06:42:45
+[06:57:46] ✅ Bot activo, sin señales – 06:57:46
+[07:12:47] ✅ Bot activo, sin señales – 07:12:47
+[07:27:47] ✅ Bot activo, sin señales – 07:27:47
+[07:42:48] ✅ Bot activo, sin señales – 07:42:48
+[07:57:48] ✅ Bot activo, sin señales – 07:57:48
+[08:12:49] ✅ Bot activo, sin señales – 08:12:49
+[08:27:50] ✅ Bot activo, sin señales – 08:27:50
+[08:42:50] ✅ Bot activo, sin señales – 08:42:50
+[08:57:51] ✅ Bot activo, sin señales – 08:57:51
+[09:12:52] ✅ Bot activo, sin señales – 09:12:51
+[09:27:52] ✅ Bot activo, sin señales – 09:27:52
+[09:42:53] ✅ Bot activo, sin señales – 09:42:53
+[09:57:54] ✅ Bot activo, sin señales – 09:57:54
+[10:12:55] ✅ Bot activo, sin señales – 10:12:54
+[10:21:52] Bot iniciado
+[10:28:00] ✅ Bot activo, sin señales – 10:28:00
+[10:40:00] ✅ Bot activo, sin señales – 10:40:00
+[11:00:00] ✅ Bot activo, sin señales – 11:00:00
+[11:11:39] Bot iniciado
+[11:30:01] ✅ Bot activo, sin señales – 11:30:00
+[11:45:02] ✅ Bot activo, sin señales – 11:45:01
+[12:00:02] ✅ Bot activo, sin señales – 12:00:02
+[12:15:03] ✅ Bot activo, sin señales – 12:15:03
+[12:30:04] ✅ Bot activo, sin señales – 12:30:04
+[12:45:05] ✅ Bot activo, sin señales – 12:45:05
+[13:05:01] ✅ Bot activo, sin señales – 13:05:01
+[13:20:02] ✅ Bot activo, sin señales – 13:20:02
+[13:35:03] ✅ Bot activo, sin señales – 13:35:03
+[13:50:05] ✅ Bot activo, sin señales – 13:50:05
+[14:10:01] ✅ Bot activo, sin señales – 14:10:01
+[14:25:01] ✅ Bot activo, sin señales – 14:25:01
+[14:31:17] Bot iniciado
+[14:40:02] ✅ Bot activo, sin señales – 14:40:02
+[14:50:01] ✅ Bot activo, sin señales – 14:50:00
+[14:55:03] ✅ Bot activo, sin señales – 14:55:02
+[15:05:03] ✅ Bot activo, sin señales – 15:05:02
+[15:15:01] ✅ Bot activo, sin señales – 15:15:00
+[15:20:03] ✅ Bot activo, sin señales – 15:20:03
+[15:30:02] ✅ Bot activo, sin señales – 15:30:02
+[15:35:04] ✅ Bot activo, sin señales – 15:35:04
+[15:45:03] ✅ Bot activo, sin señales – 15:45:03
+[15:55:00] ✅ Bot activo, sin señales – 15:55:00
+[16:00:04] ✅ Bot activo, sin señales – 16:00:04
+[16:10:01] ✅ Bot activo, sin señales – 16:10:00
+[16:20:01] ✅ Bot activo, sin señales – 16:20:00
+[16:25:02] ✅ Bot activo, sin señales – 16:25:01
+[16:35:02] ✅ Bot activo, sin señales – 16:35:01
+[16:40:04] ✅ Bot activo, sin señales – 16:40:03
+[16:55:01] ✅ Bot activo, sin señales – 16:55:00
+[16:55:05] ✅ Bot activo, sin señales – 16:55:05
+[17:10:04] ✅ Bot activo, sin señales – 17:10:03
+[17:15:01] ✅ Bot activo, sin señales – 17:15:01
+[17:25:05] ✅ Bot activo, sin señales – 17:25:05
+[17:30:03] ✅ Bot activo, sin señales – 17:30:02
+[17:45:00] ✅ Bot activo, sin señales – 17:45:00
+[17:45:04] ✅ Bot activo, sin señales – 17:45:04
+[18:00:04] ✅ Bot activo, sin señales – 18:00:04
+[18:05:01] ✅ Bot activo, sin señales – 18:05:00
+[18:15:05] ✅ Bot activo, sin señales – 18:15:05
+[18:25:01] ✅ Bot activo, sin señales – 18:25:00
+[18:35:01] ✅ Bot activo, sin señales – 18:35:00
+[18:40:01] ✅ Bot activo, sin señales – 18:40:01
+[18:50:02] ✅ Bot activo, sin señales – 18:50:02
+[18:55:03] ✅ Bot activo, sin señales – 18:55:02
+[19:05:03] ✅ Bot activo, sin señales – 19:05:03
+[19:10:04] ✅ Bot activo, sin señales – 19:10:03
+[19:20:04] ✅ Bot activo, sin señales – 19:20:04
+[19:25:05] ✅ Bot activo, sin señales – 19:25:04
+[19:35:05] ✅ Bot activo, sin señales – 19:35:04
+[19:45:00] ✅ Bot activo, sin señales – 19:45:00
+[19:55:01] ✅ Bot activo, sin señales – 19:55:00
+[20:00:02] ✅ Bot activo, sin señales – 20:00:01
+[20:10:02] ✅ Bot activo, sin señales – 20:10:02
+[20:15:03] ✅ Bot activo, sin señales – 20:15:03
+[20:25:03] ✅ Bot activo, sin señales – 20:25:03
+[20:30:04] ✅ Bot activo, sin señales – 20:30:04
+[20:40:04] ✅ Bot activo, sin señales – 20:40:04
+[20:45:05] ✅ Bot activo, sin señales – 20:45:05
+[21:00:01] ✅ Bot activo, sin señales – 21:00:01
+[21:05:01] ✅ Bot activo, sin señales – 21:05:00
+[21:15:02] ✅ Bot activo, sin señales – 21:15:02
+[21:20:02] ✅ Bot activo, sin señales – 21:20:01
+[21:30:03] ✅ Bot activo, sin señales – 21:30:02
+[21:35:02] ✅ Bot activo, sin señales – 21:35:02
+[21:45:03] ✅ Bot activo, sin señales – 21:45:03
+[21:50:04] ✅ Bot activo, sin señales – 21:50:03
+[22:00:04] ✅ Bot activo, sin señales – 22:00:03
+[22:10:02] ✅ Bot activo, sin señales – 22:10:00
+[22:15:05] ✅ Bot activo, sin señales – 22:15:04
+[22:25:03] ✅ Bot activo, sin señales – 22:25:02
+[22:35:01] ✅ Bot activo, sin señales – 22:35:01
+[22:40:04] ✅ Bot activo, sin señales – 22:40:03
+[22:50:02] ✅ Bot activo, sin señales – 22:50:01
+[22:55:05] ✅ Bot activo, sin señales – 22:55:05
+[23:05:03] ✅ Bot activo, sin señales – 23:05:02
+[23:15:01] ✅ Bot activo, sin señales – 23:15:01
+[23:20:04] ✅ Bot activo, sin señales – 23:20:03
+[23:30:03] ✅ Bot activo, sin señales – 23:30:02
+[23:35:05] ✅ Bot activo, sin señales – 23:35:04
+[23:45:04] ✅ Bot activo, sin señales – 23:45:04
+[23:55:00] ✅ Bot activo, sin señales – 23:55:00
+[00:05:01] ✅ Bot activo, sin señales – 00:05:01
+[00:10:01] ✅ Bot activo, sin señales – 00:10:01
+[00:20:03] ✅ Bot activo, sin señales – 00:20:02
+[00:25:02] ✅ Bot activo, sin señales – 00:25:02
+[00:35:04] ✅ Bot activo, sin señales – 00:35:04
+[00:40:03] ✅ Bot activo, sin señales – 00:40:03
+[00:55:01] ✅ Bot activo, sin señales – 00:55:00
+[00:55:04] ✅ Bot activo, sin señales – 00:55:04
+[01:10:02] ✅ Bot activo, sin señales – 01:10:01
+[01:10:04] ✅ Bot activo, sin señales – 01:10:04
+[01:25:03] ✅ Bot activo, sin señales – 01:25:03
+[01:30:00] ✅ Bot activo, sin señales – 01:30:00
+[01:40:05] ✅ Bot activo, sin señales – 01:40:04
+[01:45:01] ✅ Bot activo, sin señales – 01:45:01
+[02:00:01] ✅ Bot activo, sin señales – 02:00:01
+[02:00:03] ✅ Bot activo, sin señales – 02:00:02
+[02:15:03] ✅ Bot activo, sin señales – 02:15:02
+[02:15:04] ✅ Bot activo, sin señales – 02:15:03
+[02:30:04] ✅ Bot activo, sin señales – 02:30:04
+[02:30:05] ✅ Bot activo, sin señales – 02:30:04
+[02:50:00] ✅ Bot activo, sin señales – 02:50:00
+[02:50:01] ✅ Bot activo, sin señales – 02:50:00
+[03:05:01] ✅ Bot activo, sin señales – 03:05:01
+[03:05:01] ✅ Bot activo, sin señales – 03:05:01
+[03:20:02] ✅ Bot activo, sin señales – 03:20:01
+[03:20:02] ✅ Bot activo, sin señales – 03:20:02
+[03:35:02] ✅ Bot activo, sin señales – 03:35:02
+[03:35:03] ✅ Bot activo, sin señales – 03:35:02
+[03:50:03] ✅ Bot activo, sin señales – 03:50:03
+[03:50:03] ✅ Bot activo, sin señales – 03:50:03
+[04:05:05] ✅ Bot activo, sin señales – 04:05:04
+[04:05:05] ✅ Bot activo, sin señales – 04:05:04
+[04:25:00] ✅ Bot activo, sin señales – 04:25:00
+[04:25:01] ✅ Bot activo, sin señales – 04:25:00
+[04:40:01] ✅ Bot activo, sin señales – 04:40:00
+[04:40:02] ✅ Bot activo, sin señales – 04:40:01
+[04:55:02] ✅ Bot activo, sin señales – 04:55:02
+[04:55:03] ✅ Bot activo, sin señales – 04:55:02
+[05:10:03] ✅ Bot activo, sin señales – 05:10:03
+[05:10:04] ✅ Bot activo, sin señales – 05:10:04
+[05:25:04] ✅ Bot activo, sin señales – 05:25:04
+[05:30:01] ✅ Bot activo, sin señales – 05:30:00
+[05:40:05] ✅ Bot activo, sin señales – 05:40:04
+[05:45:02] ✅ Bot activo, sin señales – 05:45:02
+[06:00:00] ✅ Bot activo, sin señales – 06:00:00
+[06:00:03] ✅ Bot activo, sin señales – 06:00:02
+[06:15:00] ✅ Bot activo, sin señales – 06:15:00
+[06:15:04] ✅ Bot activo, sin señales – 06:15:03
+[06:30:02] ✅ Bot activo, sin señales – 06:30:01
+[06:35:01] ✅ Bot activo, sin señales – 06:35:00
+[06:45:02] ✅ Bot activo, sin señales – 06:45:02
+[06:50:02] ✅ Bot activo, sin señales – 06:50:01
+[07:00:03] ✅ Bot activo, sin señales – 07:00:03
+[07:05:03] ✅ Bot activo, sin señales – 07:05:02
+[07:15:04] ✅ Bot activo, sin señales – 07:15:04
+[07:20:04] ✅ Bot activo, sin señales – 07:20:04
+[07:35:00] ✅ Bot activo, sin señales – 07:35:00
+[07:35:05] ✅ Bot activo, sin señales – 07:35:05
+[07:50:02] ✅ Bot activo, sin señales – 07:50:01
+[07:55:00] ✅ Bot activo, sin señales – 07:55:00
+[08:05:03] ✅ Bot activo, sin señales – 08:05:02
+[08:10:01] ✅ Bot activo, sin señales – 08:10:01
+[08:20:03] ✅ Bot activo, sin señales – 08:20:03
+[08:25:02] ✅ Bot activo, sin señales – 08:25:01
+[08:35:04] ✅ Bot activo, sin señales – 08:35:04
+[08:40:03] ✅ Bot activo, sin señales – 08:40:03
+[08:45:40] Bot iniciado
+[08:55:00] ✅ Bot activo, sin señales – 08:55:00
+[08:55:05] ✅ Bot activo, sin señales – 08:55:04
+[09:05:01] ✅ Bot activo, sin señales – 09:05:00
+[09:10:01] ✅ Bot activo, sin señales – 09:10:01
+[09:15:01] ✅ Bot activo, sin señales – 09:15:00
+[09:20:02] ✅ Bot activo, sin señales – 09:20:01
+[09:30:02] ✅ Bot activo, sin señales – 09:30:01
+[09:35:03] ✅ Bot activo, sin señales – 09:35:02
+[09:45:03] ✅ Bot activo, sin señales – 09:45:02
+[09:50:04] ✅ Bot activo, sin señales – 09:50:03
+[10:05:05] ✅ Bot activo, sin señales – 10:05:04
+[10:25:01] ✅ Bot activo, sin señales – 10:25:00
+[10:40:01] ✅ Bot activo, sin señales – 10:40:01
+[10:55:03] ✅ Bot activo, sin señales – 10:55:02

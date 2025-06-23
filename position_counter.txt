@@ -1,0 +1,2 @@
+LONG=0
+SHORT=0

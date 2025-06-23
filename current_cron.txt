@@ -1,0 +1,2 @@
+# Añade la siguiente línea a tu crontab manualmente con 'crontab -e'
+0 22 * * * /usr/bin/python3 /Users/josemayo/Documents/KrakenBot/ipa_trade_logger.py >> /Users/josemayo/Documents/KrakenBot/ipa_trade_logger.log 2>&1

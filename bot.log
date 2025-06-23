@@ -1,0 +1,59 @@
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv...
+📈 Señales evaluadas.
+🔴 Señal CORTA detectada. Enviando orden REAL...
+✅ Orden enviada: {'info': {'status': 'placed', 'receivedTime': '2025-05-28T06:42:50.857052Z', 'orderEvents': [{'executionId': 'f37be6e3-f0f4-4bf9-a172-4f3b73ad7582', 'price': '108802.00000000', 'amount': '0.005', 'orderPriorEdit': None, 'orderPriorExecution': {'orderId': '9f0472f1-0d09-495e-bfde-4321696f933b', 'cliOrdId': None, 'type': 'ioc', 'symbol': 'PF_XBTUSD', 'side': 'sell', 'quantity': '0.005', 'filled': '0', 'limitPrice': '107713.00', 'reduceOnly': False, 'timestamp': '2025-05-28T06:42:50.857Z', 'lastUpdateTimestamp': '2025-05-28T06:42:50.857Z'}, 'takerReducedQuantity': None, 'type': 'EXECUTION'}], 'order_id': '9f0472f1-0d09-495e-bfde-4321696f933b'}, 'id': '9f0472f1-0d09-495e-bfde-4321696f933b', 'clientOrderId': None, 'timestamp': 1748414570857, 'datetime': '2025-05-28T06:42:50.857Z', 'lastTradeTimestamp': None, 'lastUpdateTimestamp': None, 'symbol': 'BTC/USD:USD', 'type': 'market', 'timeInForce': 'ioc', 'postOnly': False, 'reduceOnly': False, 'side': 'sell', 'price': 107713.0, 'triggerPrice': None, 'amount': 0.005, 'cost': 544.01, 'average': 108802.0, 'filled': 0.005, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'fees': [], 'trades': [{'info': {'executionId': 'f37be6e3-f0f4-4bf9-a172-4f3b73ad7582', 'price': '108802.00000000', 'amount': '0.005', 'orderPriorEdit': None, 'orderPriorExecution': {'orderId': '9f0472f1-0d09-495e-bfde-4321696f933b', 'cliOrdId': None, 'type': 'ioc', 'symbol': 'PF_XBTUSD', 'side': 'sell', 'quantity': '0.005', 'filled': '0', 'limitPrice': '107713.00', 'reduceOnly': False, 'timestamp': '2025-05-28T06:42:50.857Z', 'lastUpdateTimestamp': '2025-05-28T06:42:50.857Z'}, 'takerReducedQuantity': None, 'type': 'EXECUTION'}, 'id': 'f37be6e3-f0f4-4bf9-a172-4f3b73ad7582', 'symbol': 'BTC/USD:USD', 'timestamp': None, 'datetime': None, 'order': '9f0472f1-0d09-495e-bfde-4321696f933b', 'type': 'market', 'side': 'sell', 'takerOrMaker': None, 'price': 108802.0, 'amount': 0.005, 'cost': 544.01, 'fee': {'cost': None, 'currency': None}, 'fees': []}], 'stopPrice': None, 'takeProfitPrice': None, 'stopLossPrice': None}
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+
+[2025-05-28T06:59:04.676499] 👉 Ejecutando ciclo de señal 4h...
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv
+📈 Señales evaluadas. Última señal: None
+⚪ Sin señal activa. No se envía orden.
+🕒 Esperando 1.02 h hasta el próximo cierre 4h: 2025-05-28T08:00:10 UTC
+
+[2025-05-28T08:00:09.953504] 👉 Ejecutando ciclo de señal 4h...
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv
+📈 Señales evaluadas. Última señal: None
+⚪ Sin señal activa. No se envía orden.
+🕒 Esperando 4.00 h hasta el próximo cierre 4h: 2025-05-28T12:00:10 UTC
+
+[2025-05-28T12:00:09.199708] 👉 Ejecutando ciclo de señal 4h...
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv
+📈 Señales evaluadas. Última señal: None
+⚪ Sin señal activa. No se envía orden.
+🕒 Esperando 4.00 h hasta el próximo cierre 4h: 2025-05-28T16:00:10 UTC
+
+[2025-05-28T16:00:09.379033] 👉 Ejecutando ciclo de señal 4h...
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv
+📈 Señales evaluadas. Última señal: None
+⚪ Sin señal activa. No se envía orden.
+🕒 Esperando 4.00 h hasta el próximo cierre 4h: 2025-05-28T20:00:10 UTC
+
+[2025-05-28T20:00:09.259373] 👉 Ejecutando ciclo de señal 4h...
+📤 Cargando datos OHLC desde ohlc_4h_formateado.csv
+📈 Señales evaluadas. Última señal: None
+⚪ Sin señal activa. No se envía orden.
+🕒 Esperando -16.00 h hasta el próximo cierre 4h: 2025-05-28T04:00:10 UTC
+Traceback (most recent call last):
+  File "/Users/josemayo/Documents/KrakenBot/ipa_kraken_futures_real_v3_retry.py", line 80, in <module>
+    wait_seconds = (next_close - now).total_seconds()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: sleep length must be non-negative
