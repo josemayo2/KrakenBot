@@ -1,4 +1,6 @@
 ccxt
 pandas
+numpy
 pytz
 requests
+pytest

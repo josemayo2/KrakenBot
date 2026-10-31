@@ -1,0 +1,9 @@
+# secretos (ojo: .env y kraken.key ya están en el historial -> regenerar claves)
+.env
+kraken.key
+# salidas y caches
+results/
+data/
+__pycache__/
+.pytest_cache/
+.DS_Store
