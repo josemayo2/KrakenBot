@@ -121,6 +121,7 @@ def run_once(cfg: LiveConfig, broker, fetch, notifier: Notifier, now: pd.Timesta
         notifier.send(f"🛑 Drawdown {dd:.1%} >= {cfg.max_drawdown_halt:.0%}. No se abren más posiciones "
                       f"(las abiertas se siguen gestionando). Para reanudar: poner halted=false en {cfg.state_path}")
     halted = state.get("halted", False)
+    processed = 0
 
     for sym in cfg.symbols:
         try:
@@ -213,6 +214,7 @@ def run_once(cfg: LiveConfig, broker, fetch, notifier: Notifier, now: pd.Timesta
                         log_trade(cfg.trades_log, {"time": now, "symbol": sym, "action": "entry", "side": side,
                                                    "size": size, "price": px, "stop": stop, "equity": equity})
             state["last_bar"][sym] = str(last_t)
+            processed += 1
         except Exception as e:
             notifier.send(f"❌ {sym}: error {type(e).__name__}: {e}")
             traceback.print_exc()
@@ -220,6 +222,13 @@ def run_once(cfg: LiveConfig, broker, fetch, notifier: Notifier, now: pd.Timesta
             save_state(cfg.state_path, state)
 
     save_state(cfg.state_path, state)
+    open_txt = ", ".join(f"{s.replace('PF_', '').replace('USD', '')} {'L' if p['side'] == 1 else 'S'}"
+                         for s, p in positions.items()) or "ninguna"
+    print(f"[{now:%Y-%m-%d %H:%M}Z] ejecución OK | velas nuevas: {processed} | capital {equity:,.2f} | "
+          f"posiciones: {open_txt}{' | EN PAUSA' if state.get('halted') else ''}", flush=True)
+    if processed and now.hour == 0 and now.minute < 30:  # resumen diario tras la vela de las 00:00 UTC
+        notifier.send(f"💓 Bot activo | capital {equity:,.2f} $ | posiciones: {open_txt}"
+                      f"{' | ⏸️ EN PAUSA' if state.get('halted') else ''}")
     return state
 
 
