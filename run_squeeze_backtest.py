@@ -13,6 +13,8 @@ import argparse
 from dataclasses import fields
 from pathlib import Path
 
+import pandas as pd
+
 from smc.backtest import BTConfig, run_signal_backtest, summarize
 from smc.data import load_or_download
 from smc.squeeze import SqueezeParams, generate_squeeze_signals
@@ -64,6 +66,15 @@ def main() -> None:
         print("\n  salidas:", trades["reason"].value_counts().to_dict())
         print(f"  MFE mediano (R): {trades['mfe_r'].median():.2f}  "
               f"| % trades que llegaron a +1R: {100 * (trades['mfe_r'] >= 1).mean():.0f}%")
+        for side, name in ((1, "largos"), (-1, "cortos")):
+            t_ = trades[trades["side"] == side]
+            if len(t_):
+                print(f"  {name:>7}: {len(t_):>4} ops | R medio {t_['r'].mean():+.3f} | R total {t_['r'].sum():+.1f}")
+        by_year = trades.groupby(pd.to_datetime(trades["entry_time"]).dt.year)["r"].agg(["count", "mean", "sum"])
+        print("  por año:  " + "  ".join(f"{y}: {int(r['count'])} ops {r['sum']:+.1f}R" for y, r in by_year.iterrows()))
+        total_r = trades["r"].sum()
+        top5 = trades["r"].nlargest(5).sum()
+        print(f"  R total {total_r:+.1f} | las 5 mejores aportan {top5:+.1f}R | sin ellas: {total_r - top5:+.1f}R")
         trades.to_csv(out / f"squeeze_trades_{tag}_{a.costs}.csv", index=False)
     equity.to_csv(out / f"squeeze_equity_{tag}_{a.costs}.csv")
     print(f"\nResultados guardados en {out}/")
