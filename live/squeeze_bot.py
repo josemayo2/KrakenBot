@@ -54,8 +54,10 @@ class Notifier:
         if self.token and self.chat_id:
             try:
                 import requests
-                requests.post(f"https://api.telegram.org/bot{self.token}/sendMessage",
-                              data={"chat_id": self.chat_id, "text": text}, timeout=10)
+                r = requests.post(f"https://api.telegram.org/bot{self.token}/sendMessage",
+                                  data={"chat_id": self.chat_id, "text": text}, timeout=10)
+                if not r.ok:
+                    print(f"(Telegram rechazó el mensaje: {r.status_code} {r.text[:200]})", flush=True)
             except Exception as e:  # el aviso nunca debe tumbar el bot
                 print(f"(Telegram falló: {e})", flush=True)
 
