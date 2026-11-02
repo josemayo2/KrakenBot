@@ -40,6 +40,7 @@ class LiveConfig:
     max_notional_per_trade: float = 500.0   # tope de nocional por operación (USD)
     max_total_notional: float = 2500.0      # tope de nocional sumando todas las posiciones
     max_drawdown_halt: float = 0.25         # si el capital cae 25% desde el máximo -> no abre más
+    capital_cap: float = 0.0                # >0: el tamaño se calcula como mucho sobre este capital
     paper_initial_equity: float = 1000.0
     # estrategia: la variante validada en walk-forward
     params: SqueezeParams = field(default_factory=lambda: SqueezeParams(
@@ -63,6 +64,7 @@ class LiveConfig:
         c.max_notional_per_trade = _env("BOT_MAX_NOTIONAL_PER_TRADE", c.max_notional_per_trade, float)
         c.max_total_notional = _env("BOT_MAX_TOTAL_NOTIONAL", c.max_total_notional, float)
         c.max_drawdown_halt = _env("BOT_MAX_DRAWDOWN_HALT", c.max_drawdown_halt, float)
+        c.capital_cap = _env("BOT_CAPITAL_CAP", c.capital_cap, float)
         c.paper_initial_equity = _env("BOT_PAPER_EQUITY", c.paper_initial_equity, float)
         c.state_path = _env("BOT_STATE_PATH", f"live_state/state_{c.mode}.json")
         c.trades_log = _env("BOT_TRADES_LOG", f"live_state/trades_{c.mode}.csv")

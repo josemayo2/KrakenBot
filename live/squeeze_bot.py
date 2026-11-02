@@ -185,7 +185,8 @@ def run_once(cfg: LiveConfig, broker, fetch, notifier: Notifier, now: pd.Timesta
                 if halted:
                     notifier.send(f"⏸️ {sym}: señal {side_txt} ignorada (bot en pausa por drawdown)")
                 else:
-                    size = cfg.risk_pct * equity / stop_dist
+                    sizing_equity = min(equity, cfg.capital_cap) if cfg.capital_cap > 0 else equity
+                    size = cfg.risk_pct * sizing_equity / stop_dist
                     size = min(size, cfg.max_notional_per_trade / close)
                     used = sum(p["size"] * p["entry"] for p in positions.values())
                     size = min(size, max(0.0, cfg.max_total_notional - used) / close)

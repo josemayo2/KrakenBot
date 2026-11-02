@@ -90,6 +90,19 @@ def test_notional_cap(tmp_path, market):
     assert st["size"] * st["entry"] <= 50.0 * 1.001
 
 
+def test_capital_cap_limits_size(tmp_path, market):
+    df, e, _ = market
+    b = first_entry(e)
+    sizes = {}
+    for cap in (0.0, 1000.0):
+        d = tmp_path / f"cap{int(cap)}"
+        cfg = make_cfg(d, capital_cap=cap)
+        broker = PaperBroker(str(d / "paper.json"), initial_equity=5000)
+        run_once(cfg, broker, lambda s: df.iloc[:b + 1], Quiet())
+        sizes[cap] = load_state(cfg.state_path)["positions"]["TEST"]["size"]
+    assert sizes[1000.0] == pytest.approx(sizes[0.0] / 5, rel=1e-3)
+
+
 # ------------------------------------------------------------ casos de fallo con un broker falso
 class FakeBroker(PaperBroker):
     def __init__(self, path, fail_stop=False):
