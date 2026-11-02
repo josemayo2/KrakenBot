@@ -64,7 +64,7 @@ cancelación y cierre.
 crontab -e
 ```
 ```
-2 0,4,8,12,16,20 * * * cd $HOME/squeeze-bot && flock -n /tmp/squeeze_bot.lock .venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1
+2 * * * * cd $HOME/squeeze-bot && flock -n /tmp/squeeze_bot.lock .venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1
 ```
 
 ## Día a día
