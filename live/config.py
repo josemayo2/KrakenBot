@@ -13,16 +13,22 @@ DEFAULT_SYMBOLS = ["PF_XBTUSD", "PF_ETHUSD", "PF_SOLUSD", "PF_XRPUSD",
 
 
 def load_dotenv(path: str | Path = ".env") -> None:
-    """Lector mínimo de .env (KEY=valor). No pisa variables ya definidas."""
+    """Lector mínimo de .env (KEY=valor).
+
+    El .env del bot MANDA sobre variables ya definidas en el sistema (p. ej. restos de
+    otros bots en ~/.bashrc), para que cron y una ejecución manual usen lo mismo.
+    """
     p = Path(path)
     if not p.exists():
         return
     for line in p.read_text().splitlines():
         line = line.strip()
+        if line.startswith("export "):
+            line = line[7:].strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
         k, v = line.split("=", 1)
-        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+        os.environ[k.strip()] = v.strip().strip('"').strip("'")
 
 
 def _env(name: str, default, conv=str):
