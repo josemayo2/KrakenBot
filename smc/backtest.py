@@ -131,6 +131,102 @@ def run_backtest(df: pd.DataFrame, setups: pd.DataFrame, cfg: BTConfig | None = 
     return tr, pd.Series(eq_curve, index=idx, name="equity")
 
 
+def run_signal_backtest(df: pd.DataFrame, entries: pd.DataFrame, exits: pd.DataFrame,
+                        cfg: BTConfig | None = None):
+    """Simulador para estrategias de entrada a mercado y salida por señal.
+
+    - Señal de entrada al cierre de t -> compra/venta a mercado en la apertura de t+1
+      (taker + slippage). Stop = precio de entrada ∓ stop_dist; TP opcional a tp_r * riesgo.
+    - Señal de salida al cierre de t -> cierre a mercado en la apertura de t+1.
+    - Stop y TP se vigilan dentro de cada vela, incluida la de entrada (se entra en la
+      apertura, así que no hay ambigüedad de orden). Si se tocan ambos -> stop.
+    - Si en la misma apertura hay salida y entrada contraria, primero se cierra y luego se abre.
+    """
+    cfg = cfg or BTConfig()
+    cm = COSTS[cfg.costs]
+    o, h, l, c = (df[k].to_numpy() for k in ("open", "high", "low", "close"))
+    xl, xs = exits["exit_long"].to_numpy(), exits["exit_short"].to_numpy()
+    idx = df.index
+    n = len(df)
+    by_bar = {int(r.bar): r for r in entries.itertuples(index=False)} if len(entries) else {}
+
+    equity = cfg.initial_equity
+    eq_curve = np.empty(n)
+    pos = None
+    pend_entry = None
+    pend_exit = False
+    trades = []
+
+    def close_pos(t, price, reason, fee_rate):
+        nonlocal equity, pos
+        side, qty = pos["side"], pos["qty"]
+        exit_fee = qty * price * fee_rate
+        gross = side * qty * (price - pos["entry"])
+        equity += gross - exit_fee
+        pnl = gross - pos["entry_fee"] - exit_fee
+        trades.append({
+            "entry_time": idx[pos["bar"]], "exit_time": idx[t], "side": side,
+            "entry": pos["entry"], "exit": price, "sl": pos["sl"], "tp": pos["tp"],
+            "qty": qty, "fees": pos["entry_fee"] + exit_fee, "pnl": pnl,
+            "r": pnl / pos["risk_cash"], "reason": reason, "bars": t - pos["bar"],
+            "mfe_r": pos["mfe"] / pos["risk_px"],
+        })
+        pos = None
+
+    for t in range(n):
+        # 1) apertura: salida pendiente y luego entrada pendiente
+        if pos is not None and pend_exit:
+            close_pos(t, o[t] * (1 - pos["side"] * cm.slippage), "signal", cm.taker)
+        pend_exit = False
+        if pos is None and pend_entry is not None:
+            s = pend_entry
+            fill = o[t] * (1 + s.side * cm.slippage)
+            risk_px = s.stop_dist
+            if risk_px > 0:
+                qty = min(cfg.risk_per_trade * equity / risk_px, cfg.max_leverage * equity / fill)
+                fee = qty * fill * cm.taker
+                equity -= fee
+                pos = {"side": s.side, "entry": fill, "sl": fill - s.side * risk_px,
+                       "tp": fill + s.side * s.tp_r * risk_px if s.tp_r > 0 else np.nan,
+                       "qty": qty, "bar": t, "entry_fee": fee, "risk_px": risk_px,
+                       "risk_cash": qty * risk_px, "mfe": 0.0}
+        pend_entry = None
+
+        # 2) dentro de la vela: stop / take profit
+        if pos is not None:
+            side, sl, tp = pos["side"], pos["sl"], pos["tp"]
+            gap_sl = (side == 1 and o[t] <= sl) or (side == -1 and o[t] >= sl)
+            hit_sl = (side == 1 and l[t] <= sl) or (side == -1 and h[t] >= sl)
+            hit_tp = not np.isnan(tp) and ((side == 1 and h[t] >= tp) or (side == -1 and l[t] <= tp))
+            if gap_sl and pos["bar"] != t:
+                close_pos(t, o[t] * (1 - side * cm.slippage), "sl_gap", cm.taker)
+            elif hit_sl:
+                close_pos(t, sl * (1 - side * cm.slippage), "sl", cm.taker)
+            elif hit_tp:
+                close_pos(t, tp, "tp", cm.maker)
+            else:
+                fav = (h[t] - pos["entry"]) if side == 1 else (pos["entry"] - l[t])
+                pos["mfe"] = max(pos["mfe"], fav)
+                if cfg.max_hold_bars and t - pos["bar"] >= cfg.max_hold_bars:
+                    pend_exit = True
+
+        # 3) cierre: señales para la apertura siguiente
+        if pos is not None and ((pos["side"] == 1 and xl[t]) or (pos["side"] == -1 and xs[t])):
+            pend_exit = True
+        if t in by_bar:
+            s = by_bar[t]
+            if pos is None or (pend_exit and pos["side"] != s.side):
+                pend_entry = s
+
+        eq_curve[t] = equity + (pos["side"] * pos["qty"] * (c[t] - pos["entry"]) if pos else 0.0)
+
+    if pos is not None:
+        close_pos(n - 1, c[-1], "eod", cm.taker)
+        eq_curve[-1] = equity
+
+    return pd.DataFrame(trades), pd.Series(eq_curve, index=idx, name="equity")
+
+
 def summarize(trades: pd.DataFrame, equity: pd.Series, df: pd.DataFrame,
               initial_equity: float = 10_000.0) -> dict:
     out = {"bars": len(df), "start": str(df.index[0]), "end": str(df.index[-1])}

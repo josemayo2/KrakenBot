@@ -72,6 +72,24 @@ def download_kraken_futures(symbol: str = "PF_XBTUSD", resolution: str = "1h",
     return out[~out.index.duplicated()].sort_index()
 
 
+def load_or_download(csv: str | None = None, symbol: str | None = None, tf: str = "1h",
+                     start: str = "2022-01-01", end: str | None = None,
+                     cache_dir: str | Path = "data") -> tuple[pd.DataFrame, str]:
+    """Carga un CSV o descarga de Kraken Futures con caché en data/. Devuelve (df, etiqueta)."""
+    if csv:
+        return load_csv(csv), Path(csv).stem
+    cache = Path(cache_dir) / f"{symbol}_{tf}_{start}_{end or 'now'}.csv"
+    if cache.exists():
+        df = load_csv(cache)
+    else:
+        print(f"Descargando {symbol} {tf} desde {start}...")
+        df = download_kraken_futures(symbol, tf, start, end)
+        cache.parent.mkdir(exist_ok=True)
+        df.reset_index().assign(time=lambda d: d["time"].astype("int64") // 10**6) \
+          .rename(columns={"time": "timestamp"}).to_csv(cache, index=False)
+    return df, f"{symbol}_{tf}"
+
+
 def download_kraken_spot(pair: str = "XBTUSD", resolution: str = "1h") -> pd.DataFrame:
     """Últimas 720 velas de Kraken spot (limitación de la API pública)."""
     import requests

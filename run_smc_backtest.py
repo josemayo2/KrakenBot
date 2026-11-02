@@ -19,7 +19,7 @@ from dataclasses import fields
 from pathlib import Path
 
 from smc import BTConfig, SMCParams, generate_setups, run_backtest, summarize
-from smc.data import download_kraken_futures, load_csv
+from smc.data import load_or_download
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -52,20 +52,7 @@ def main() -> None:
     out = Path(a.out)
     out.mkdir(exist_ok=True)
 
-    if a.csv:
-        df = load_csv(a.csv)
-        tag = Path(a.csv).stem
-    else:
-        cache = Path("data") / f"{a.symbol}_{a.tf}_{a.start}_{a.end or 'now'}.csv"
-        if cache.exists():
-            df = load_csv(cache)
-        else:
-            print(f"Descargando {a.symbol} {a.tf} desde {a.start}...")
-            df = download_kraken_futures(a.symbol, a.tf, a.start, a.end)
-            cache.parent.mkdir(exist_ok=True)
-            df.reset_index().assign(time=lambda d: d["time"].astype("int64") // 10**6) \
-              .rename(columns={"time": "timestamp"}).to_csv(cache, index=False)
-        tag = f"{a.symbol}_{a.tf}"
+    df, tag = load_or_download(a.csv, a.symbol, a.tf, a.start, a.end)
 
     p = SMCParams(**{f.name: getattr(a, f.name) for f in fields(SMCParams)
                      if getattr(a, f.name) is not None})
