@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -73,4 +74,11 @@ class LiveConfig:
         c.api_secret = _env(f"{prefix}_API_SECRET", "")
         c.telegram_token = _env("TELEGRAM_TOKEN", "")
         c.telegram_chat_id = _env("TELEGRAM_CHAT_ID", "")
+        bad = [s for s in c.symbols if not re.fullmatch(r"PF_[A-Z0-9]+", s)]
+        if bad or not c.symbols:
+            raise ValueError(f"BOT_SYMBOLS no válido en el .env: {bad or c.symbols}. "
+                             f"Ejemplo: BOT_SYMBOLS={','.join(DEFAULT_SYMBOLS)}")
+        if c.telegram_chat_id and not re.fullmatch(r"-?\d+", c.telegram_chat_id):
+            print(f"Aviso: TELEGRAM_CHAT_ID debe ser un número (no '{c.telegram_chat_id}'). Telegram desactivado.")
+            c.telegram_token = c.telegram_chat_id = ""
         return c

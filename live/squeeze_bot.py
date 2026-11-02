@@ -290,6 +290,11 @@ def main() -> None:
 
     if a.status:
         print(f"Modo: {cfg.mode} | capital: {broker.equity():,.2f}")
+        if cfg.mode != "paper":
+            for s in cfg.symbols:
+                broker._market(s)  # falla con un mensaje claro si el mercado no existe en Kraken
+        print(f"Mercados: {', '.join(cfg.symbols)}")
+        print(f"Telegram: {'activado' if cfg.telegram_token and cfg.telegram_chat_id else 'desactivado'}")
         for s in cfg.symbols:
             p = broker.position(s)
             if p:

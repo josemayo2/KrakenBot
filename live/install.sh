@@ -28,6 +28,20 @@ ask_secret() {
   printf '\n' >&2; printf '%s' "$v"
 }
 yes_no() { local a; a="$(ask "$1 [s/N] ")"; [[ "$a" =~ ^[sSyY] ]]; }
+DEFAULT_SYMS="PF_XBTUSD,PF_ETHUSD,PF_SOLUSD,PF_ADAUSD,PF_LINKUSD,PF_DOGEUSD"
+env_get() { grep "^$1=" .env 2>/dev/null | head -n1 | cut -d= -f2- || true; }
+env_set() {  # reemplaza (o añade) KEY=valor en .env conservando el resto
+  local tmp; tmp="$(mktemp)"
+  grep -v "^$1=" .env > "$tmp" || true
+  printf '%s=%s\n' "$1" "$2" >> "$tmp"
+  mv "$tmp" .env && chmod 600 .env
+}
+
+if [ "$(uname)" = "Darwin" ]; then
+  printf '\n\033[1;33m⚠️  Estás en un Mac (%s). Este instalador es para el SERVIDOR de DigitalOcean.\033[0m\n' "$(hostname)"
+  echo "   Entra primero en el droplet con:  ssh jose@IP_DEL_DROPLET"
+  yes_no "   ¿Continuar igualmente en este Mac?" || exit 0
+fi
 
 # ---------------------------------------------------------------- 1. código
 say "1/7 Descargando el código en $DIR"
@@ -68,7 +82,7 @@ else
   TG_CHAT="$(ask '    Chat ID de Telegram: ')"
   CAP="$(ask '    Capital asignado al bot en USD [1000]: ')"; CAP="${CAP:-1000}"
   SYMS="$(ask '    Mercados [PF_XBTUSD,PF_ETHUSD,PF_SOLUSD,PF_ADAUSD,PF_LINKUSD,PF_DOGEUSD]: ')"
-  SYMS="${SYMS:-PF_XBTUSD,PF_ETHUSD,PF_SOLUSD,PF_ADAUSD,PF_LINKUSD,PF_DOGEUSD}"
+  SYMS="${SYMS:-$DEFAULT_SYMS}"
   [ -n "$KEY" ] && [ -n "$SECRET" ] || fail "faltan la key o el secret"
   umask 077
   cat > .env <<EOF
@@ -83,6 +97,25 @@ EOF
   unset KEY SECRET TG_TOKEN
   ok ".env creado (solo legible por tu usuario)"
 fi
+
+# validar y corregir valores (también en un .env ya existente)
+SYMS_NOW="$(env_get BOT_SYMBOLS | tr 'a-z' 'A-Z' | tr -d ' ')"
+if ! [[ "$SYMS_NOW" =~ ^PF_[A-Z0-9]+(,PF_[A-Z0-9]+)*$ ]]; then
+  echo "    Mercados no válidos ('$(env_get BOT_SYMBOLS)') → uso los 6 por defecto"
+  env_set BOT_SYMBOLS "$DEFAULT_SYMS"
+elif [ "$SYMS_NOW" != "$(env_get BOT_SYMBOLS)" ]; then
+  env_set BOT_SYMBOLS "$SYMS_NOW"
+fi
+CHAT_NOW="$(env_get TELEGRAM_CHAT_ID)"
+if [ -n "$CHAT_NOW" ] && ! [[ "$CHAT_NOW" =~ ^-?[0-9]+$ ]]; then
+  echo "    Chat ID de Telegram no válido ('$CHAT_NOW', debe ser un número) → Telegram desactivado"
+  env_set TELEGRAM_TOKEN ""; env_set TELEGRAM_CHAT_ID ""
+fi
+CAP_NOW="$(env_get BOT_CAPITAL_CAP)"
+if ! [[ "$CAP_NOW" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
+  env_set BOT_CAPITAL_CAP 1000
+fi
+ok "configuración: mercados=$(env_get BOT_SYMBOLS) | capital asignado=$(env_get BOT_CAPITAL_CAP) | telegram=$([ -n "$(env_get TELEGRAM_CHAT_ID)" ] && echo sí || echo no)"
 mkdir -p live_state
 
 # ---------------------------------------------------------------- 5. comprobaciones
