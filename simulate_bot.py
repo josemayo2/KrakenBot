@@ -9,7 +9,7 @@ porque los indicadores no miran al futuro (lo comprueban los tests).
 
 Uso:
   python3 simulate_bot.py                       # configuración del .env de ejemplo
-  python3 simulate_bot.py --capital 1000 --cap 1000 --halt 0.25
+  python3 simulate_bot.py --capital 1000 --cap 1000 --halt 0.5
   python3 simulate_bot.py --compare             # compara 3 configuraciones
 """
 from __future__ import annotations
@@ -130,7 +130,7 @@ def main() -> None:
     ap.add_argument("--start", default="2022-01-01")
     ap.add_argument("--capital", type=float, default=1000.0)
     ap.add_argument("--cap", type=float, default=1000.0, help="BOT_CAPITAL_CAP (0 = sin tope, interés compuesto)")
-    ap.add_argument("--halt", type=float, default=0.25, help="pausa por drawdown (1 = desactivada)")
+    ap.add_argument("--halt", type=float, default=0.5, help="pausa por drawdown (1 = desactivada)")
     ap.add_argument("--risk", type=float, default=0.01)
     ap.add_argument("--max_notional", type=float, default=500.0)
     ap.add_argument("--max_total", type=float, default=2500.0)

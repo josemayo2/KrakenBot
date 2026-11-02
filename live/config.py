@@ -39,7 +39,7 @@ class LiveConfig:
     risk_pct: float = 0.01                  # pérdida si salta el stop = 1% del capital
     max_notional_per_trade: float = 500.0   # tope de nocional por operación (USD)
     max_total_notional: float = 2500.0      # tope de nocional sumando todas las posiciones
-    max_drawdown_halt: float = 0.25         # si el capital cae 25% desde el máximo -> no abre más
+    max_drawdown_halt: float = 0.50         # freno de emergencia: si cae 50% desde el máximo -> no abre más
     capital_cap: float = 0.0                # >0: el tamaño se calcula como mucho sobre este capital
     paper_initial_equity: float = 1000.0
     # estrategia: la variante validada en walk-forward

@@ -22,7 +22,9 @@ Así cada operación arriesga lo mismo, que es como se hizo el backtest. Un noci
 de 500 $ arriesgaría ~12 $ en BTC pero ~30 $ en DOGE.
 
 Topes adicionales: 500 $ de nocional por operación, 2.500 $ en total, y si el capital
-cae un 25 % desde su máximo el bot deja de abrir posiciones (sigue gestionando las abiertas).
+cae un 50 % desde su máximo el bot deja de abrir posiciones (sigue gestionando las abiertas).
+Es un freno de emergencia: en la simulación 2022–2026 la peor caída fue del 36 %, y una
+pausa al 25 % habría parado el bot para siempre en 2023.
 
 ## Instalación en el droplet (Ubuntu)
 
