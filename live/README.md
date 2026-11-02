@@ -29,8 +29,8 @@ cae un 25 % desde su máximo el bot deja de abrir posiciones (sigue gestionando 
 ```bash
 sudo timedatectl set-timezone UTC
 sudo apt update && sudo apt install -y python3-venv git
-git clone -b smc-strategy https://github.com/josemayo2/KrakenBot.git ~/KrakenBot
-cd ~/KrakenBot
+git clone -b smc-strategy https://github.com/josemayo2/KrakenBot.git ~/squeeze-bot
+cd ~/squeeze-bot
 python3 -m venv .venv
 .venv/bin/pip install pandas numpy requests ccxt
 cp live/.env.example .env && chmod 600 .env
@@ -64,7 +64,7 @@ cancelación y cierre.
 crontab -e
 ```
 ```
-2 0,4,8,12,16,20 * * * cd $HOME/KrakenBot && flock -n /tmp/squeeze_bot.lock .venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1
+2 0,4,8,12,16,20 * * * cd $HOME/squeeze-bot && flock -n /tmp/squeeze_bot.lock .venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1
 ```
 
 ## Día a día
@@ -79,7 +79,7 @@ cat live_state/trades_live.csv                              # registro de operac
   abiertas conservan su stop en Kraken.
 - **No toques a mano** las posiciones del bot. Si hay una posición que el bot no abrió en esos
   mercados, la ignora y avisa.
-- **Actualizar el código:** `cd ~/KrakenBot && git pull`.
+- **Actualizar el código:** `cd ~/squeeze-bot && git pull`.
 
 ## Qué esperar (y qué no)
 
