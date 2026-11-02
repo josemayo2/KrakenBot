@@ -8,7 +8,8 @@ set -euo pipefail
 REPO_URL="${SQUEEZE_REPO_URL:-https://github.com/josemayo2/KrakenBot.git}"
 BRANCH="${SQUEEZE_BRANCH:-smc-strategy}"
 DIR="${SQUEEZE_DIR:-$HOME/squeeze-bot}"
-CRON_LINE="2 * * * * cd $DIR && flock -n /tmp/squeeze_bot.lock .venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1"
+LOCK=""; command -v flock >/dev/null && LOCK="flock -n /tmp/squeeze_bot.lock "
+CRON_LINE="2 * * * * cd $DIR && ${LOCK}.venv/bin/python -m live.squeeze_bot --mode live --confirm-live >> live_state/bot.log 2>&1"
 
 say()  { printf '\n\033[1;36m==> %s\033[0m\n' "$*"; }
 ok()   { printf '\033[1;32m    ✔ %s\033[0m\n' "$*"; }
@@ -107,8 +108,14 @@ fi
 # ---------------------------------------------------------------- 7. cron
 say "7/7 Activar el bot (cron cada hora; solo actúa al cerrar cada vela de 4h)"
 if yes_no "    ¿Activar el bot con DINERO REAL ahora?"; then
-  ( crontab -l 2>/dev/null | grep -v 'live.squeeze_bot' ; echo "$CRON_LINE" ) | crontab -
-  ok "bot activado. Línea de cron:"
+  if [ "$(uname)" = "Darwin" ]; then
+    echo "    ⚠️  Esto es un Mac: si se apaga o se duerme, el bot se pierde señales."
+    yes_no "    ¿Seguro que quieres activarlo AQUÍ y no en el servidor?" || fail "no activado (ejecuta el instalador en el droplet)"
+  fi
+  EXISTING="$(crontab -l 2>/dev/null | grep -v 'live.squeeze_bot' || true)"
+  { [ -n "$EXISTING" ] && printf '%s\n' "$EXISTING"; printf '%s\n' "$CRON_LINE"; } | crontab -
+  crontab -l 2>/dev/null | grep -q 'live.squeeze_bot' || fail "no se pudo escribir el cron"
+  ok "bot activado en $(hostname). Línea de cron:"
   echo "      $CRON_LINE"
 else
   echo "    No activado. Para activarlo más tarde, vuelve a ejecutar este instalador."
@@ -120,5 +127,5 @@ Listo. Comandos útiles (en $DIR):
   .venv/bin/python -m live.squeeze_bot --mode live --status   # capital y posiciones
   tail -50 live_state/bot.log                                 # qué ha hecho
   crontab -l                                                  # ver si está activo
-  crontab -l | grep -v live.squeeze_bot | crontab -           # PARAR el bot
+  crontab -l | grep -v live.squeeze_bot | crontab -           # PARAR el bot (si era la única línea, usa: crontab -r)
 EOF
