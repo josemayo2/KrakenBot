@@ -32,13 +32,14 @@ class Costs:
     slip_bps: float = 2.0  # deslizamiento estimado por lado
 
 
-def build(asset: str, tf: str, start, end, htf: str = "240", threshold: int = 70, source: str = "futures"):
+def build(asset: str, tf: str, start, end, htf: str = "240", threshold: int = 70, source: str = "futures",
+          **params):
     """Indicador calculado solo con velas hasta `end` (nada del futuro)."""
     df = data.load(asset, tf, source=source, start="2022-01-01")
     end_ts = pd.Timestamp(end, tz="UTC") if pd.Timestamp(end).tzinfo is None else pd.Timestamp(end)
     sec = data.TF_SECONDS[tf]
     df = df[df["time"] + pd.Timedelta(seconds=sec) <= end_ts].reset_index(drop=True)
-    P = indicator.Params(htf=htf, score_threshold=threshold)
+    P = indicator.Params(htf=htf, score_threshold=threshold, **params)
     lens = indicator.compute(df, tf, P, symbol=f"KRAKEN:{data.kraken_symbol(asset, source)}")
     start_ts = pd.Timestamp(start, tz="UTC") if pd.Timestamp(start).tzinfo is None else pd.Timestamp(start)
     i0 = int((lens.df["time"] < start_ts).sum())

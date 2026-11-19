@@ -125,5 +125,13 @@ def load(asset: str, tf: str = "4h", source: str = "futures", start="2022-01-01"
     return df
 
 
+def ticker(asset: str) -> dict:
+    """Precio actual del perpetuo en Kraken Futures (bid, ask, last), API pública."""
+    sym = kraken_symbol(asset)
+    d = _get_json(f"https://futures.kraken.com/derivatives/api/v3/tickers/{sym}")
+    t = d["ticker"]
+    return {"bid": float(t["bid"]), "ask": float(t["ask"]), "last": float(t["last"]), "hora": t.get("lastTime")}
+
+
 def kraken_symbol(asset: str, source: str = "futures") -> str:
     return (FUTURES_SYMBOLS if source == "futures" else SPOT_SYMBOLS).get(asset.upper(), asset)

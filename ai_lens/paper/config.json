@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-11-19T12:00:00Z",
+ "creado": "2026-11-19T15:01:56Z",
+ "capital": 1000.0,
+ "riesgo_pct": 0.5,
+ "activos": [
+  "BTC",
+  "ETH",
+  "SOL"
+ ],
+ "tf": "4h",
+ "comision_bps": 5.0,
+ "desliz_bps": 2.0,
+ "nota": "hacia delante"
+}

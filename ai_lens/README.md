@@ -83,6 +83,16 @@ Garantías:
 
 Cuántas operaciones hacen falta: el backtest da unas 230 operaciones al año con las tres monedas (todas las señales). Para distinguir +0,09R de 0 con algo de confianza hacen falta varios cientos. Unos meses de paper dicen si el sistema se comporta como en el backtest, no si es rentable.
 
+### En la nube (lo que está funcionando)
+
+Una tarea programada de Claude se ejecuta cada 4 horas, a los 12 minutos del cierre de cada vela (00, 04, 08, 12, 16 y 20 UTC). En cada ejecución:
+1. Actualiza la cartera.
+2. Claude decide los setups pendientes con `AGENT_PROMPT.md` y registra sus decisiones.
+3. Exporta `ai_lens/paper/dashboard.json` y actualiza el panel de seguimiento.
+4. Guarda la cartera en esta rama.
+
+El backtest del panel sale de `python -m ai_lens.dashboard backtest` (`results/backtest.json`). La prueba de robustez completa está en `python -m ai_lens.robustez`.
+
 ## Qué calcula (igual que el Pine)
 
 Por cada vela cerrada calcula las puntuaciones LONG y SHORT (0-100) con cinco factores de 20 puntos: tendencia (EMA 20/50/200), momento (RSI, MACD), fuerza (ADX/DMI), volumen y marco superior. También el régimen (TREND_UP / TREND_DOWN / RANGE / HIGH_VOLATILITY), la estructura (pivotes de 5 velas), los niveles (máximo y mínimo del día anterior, VWAP) y la anatomía de la vela.
@@ -151,5 +161,7 @@ El sistema funciona y es reproducible, pero **la ventaja es pequeña**: unos +0,
 | `live.py` | Modo en vivo a cada cierre de vela |
 | `paper.py` | Paper trading: cartera simulada de las cuatro estrategias |
 | `notify.py` | Avisos por Telegram desde variables de entorno |
+| `robustez.py` | Pruebas contra el azar, por periodos y de sensibilidad |
+| `dashboard.py` | Exporta los datos del panel de seguimiento |
 | `AGENT_PROMPT.md` | Instrucciones para Claude, con tus reglas |
 | `ai-agent-lens.pine` | Indicador original para pegar en TradingView y verlo en el gráfico |

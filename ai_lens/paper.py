@@ -18,7 +18,8 @@ Seguridad:
   - Solo usa la API pública de Kraken (precios). No lee claves ni tiene código de órdenes.
   - Solo velas cerradas: el indicador no ve el futuro, y recalcular da siempre el mismo resultado.
   - La decisión de Claude solo cuenta si se registra antes de que cierre la vela siguiente
-    al setup; si llega tarde se guarda como "TARDE" y no opera.
+    al setup; si llega tarde se guarda como "TARDE" y no opera. Entra al precio real del
+    momento en que decide (ask para LONG, bid para SHORT), no al cierre de la vela.
   - Bloqueo de archivo para que dos ejecuciones no se pisen; escrituras atómicas.
 
 Archivos en ai_lens/paper/ (cámbialo con la variable AI_LENS_PAPER_DIR):
@@ -141,7 +142,11 @@ def _claude_chooser(asset: str, tf: str):
             return {"decision": "SIN_DECISION"}
         if d.get("estado") != "A_TIEMPO" or _ts(d["decidido_en"]) > _ts(p["time"]) + pd.Timedelta(seconds=sec):
             return {"decision": "TARDE"}
-        return {"decision": d["decision"], "confidence": d.get("confianza"), "concerns": d.get("dudas")}
+        if d.get("invalida"):
+            return {"decision": "INVALIDA"}
+        # entrada al precio real del momento de la decisión; stop del paquete; objetivos 1,5R/3R recalculados
+        return {"decision": d["decision"], "confidence": d.get("confianza"), "concerns": d.get("dudas"),
+                "entry": d.get("precio_entrada"), "stop": d.get("stop")}
     return fn
 
 
@@ -389,10 +394,20 @@ def cmd_decidir(a):
             sys.exit("Esa vela ya tiene decisión de Claude; no se puede cambiar.")
         limite = _ts(vela) + pd.Timedelta(seconds=sec)
         estado = "A_TIEMPO" if now <= limite else "TARDE"
-        decs.append(dict(activo=a.activo, vela=vela, decision=a.decision, confianza=a.confianza, dudas=a.dudas,
-                         decidido_en=_iso(now), limite=_iso(limite), estado=estado))
+        rec = dict(activo=a.activo, vela=vela, decision=a.decision, confianza=a.confianza, dudas=a.dudas,
+                   decidido_en=_iso(now), limite=_iso(limite), estado=estado)
+        if a.decision in ("LONG", "SHORT"):
+            stop = float(lens.df["t_stop"].iat[idx[0]])
+            tk = data.ticker(a.activo)
+            precio = tk["ask"] if a.decision == "LONG" else tk["bid"]  # se compra al ask, se vende al bid
+            rec.update(precio_entrada=precio, stop=stop, ticker=tk)
+            if (a.decision == "LONG" and precio <= stop) or (a.decision == "SHORT" and precio >= stop):
+                rec["invalida"] = "el precio actual ya ha pasado el stop"
+        decs.append(rec)
         _write_json("decisiones_claude.json", decs)
-        print(f"Decisión registrada: {a.activo} {vela} -> {a.decision} ({estado})")
+        extra = f" entrada {rec.get('precio_entrada')} stop {rec.get('stop'):.6g}" if "stop" in rec else ""
+        print(f"Decisión registrada: {a.activo} {vela} -> {a.decision} ({estado}){extra}"
+              + (f" INVALIDA: {rec['invalida']}" if rec.get("invalida") else ""))
 
 
 def main():
