@@ -47,6 +47,42 @@ Con el modo en vivo funcionando, abre Claude Code en el repo y pídele:
 *"Usa ai_lens/AGENT_PROMPT.md como instrucciones. Lee ai_lens/packets/latest_SOL.json y dame la señal."*
 Si defines `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID`, también te avisa por Telegram en cada setup.
 
+## Paper trading (cartera simulada, sin claves)
+
+`paper.py` lleva una cartera simulada **desde el día en que la arrancas**. Compara cuatro estrategias en paralelo:
+
+| Estrategia | Qué hace |
+|---|---|
+| `indicador` | todas las señales del indicador |
+| `reglas` | agente de reglas (AGENT_PROMPT en código) |
+| `reglas_htfD` | agente de reglas con sesgo del marco diario |
+| `claude` | las decisiones de Claude, si se registran antes de que cierre la vela siguiente |
+
+```bash
+python -m ai_lens.paper init            # 1000 USD, 0,5 % de riesgo por operación, BTC ETH SOL 4h
+python -m ai_lens.paper                 # actualizar: descarga velas, registra setups y recalcula
+python -m ai_lens.paper informe         # ver el informe (también en ai_lens/paper/INFORME.md)
+python -m ai_lens.paper pendientes      # setups que esperan la decisión de Claude
+python -m ai_lens.paper decidir --activo SOL --vela 2026-11-20T04:00:00Z --decision SHORT --confianza 60 --dudas "RSI 27"
+```
+
+Cron en el Mac, cada hora. Si el Mac estaba dormido, la siguiente ejecución recupera las velas perdidas:
+
+```
+5 * * * * cd /Users/josemayo/Documents/KrakenBot && /usr/bin/python3 -m ai_lens.paper run --quiet >> logs/paper.log 2>&1
+```
+
+Avisos de Telegram (opcional): el código solo lee las variables de entorno `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID`, nunca un archivo de claves. Para usar las de tu `.env`, añade `set -a && . ./.env && set +a &&` antes de `/usr/bin/python3` en la línea de cron.
+
+Garantías:
+- Solo precios públicos de Kraken. No hay ni una línea que envíe órdenes ni que use claves de Kraken.
+- Solo velas cerradas. El rendimiento se recalcula desde el inicio en cada ejecución y da siempre lo mismo.
+- Ejecutarlo dos veces seguidas no duplica nada (hay un bloqueo de archivo).
+- Una decisión de Claude que llega tarde se guarda como `TARDE` y no opera. Una decisión ya registrada no se puede cambiar.
+- `diario.jsonl` guarda cada setup con la decisión de cada estrategia y la hora en que se registró.
+
+Cuántas operaciones hacen falta: el backtest da unas 230 operaciones al año con las tres monedas (todas las señales). Para distinguir +0,09R de 0 con algo de confianza hacen falta varios cientos. Unos meses de paper dicen si el sistema se comporta como en el backtest, no si es rentable.
+
 ## Qué calcula (igual que el Pine)
 
 Por cada vela cerrada calcula las puntuaciones LONG y SHORT (0-100) con cinco factores de 20 puntos: tendencia (EMA 20/50/200), momento (RSI, MACD), fuerza (ADX/DMI), volumen y marco superior. También el régimen (TREND_UP / TREND_DOWN / RANGE / HIGH_VOLATILITY), la estructura (pivotes de 5 velas), los niveles (máximo y mínimo del día anterior, VWAP) y la anatomía de la vela.
@@ -113,5 +149,7 @@ El sistema funciona y es reproducible, pero **la ventaja es pequeña**: unos +0,
 | `backtest.py` | Simulador y estadísticas en R, con costes |
 | `replay.py` | Reproducción, flujo de paquetes, modo ciego y evaluación de decisiones |
 | `live.py` | Modo en vivo a cada cierre de vela |
+| `paper.py` | Paper trading: cartera simulada de las cuatro estrategias |
+| `notify.py` | Avisos por Telegram desde variables de entorno |
 | `AGENT_PROMPT.md` | Instrucciones para Claude, con tus reglas |
 | `ai-agent-lens.pine` | Indicador original para pegar en TradingView y verlo en el gráfico |

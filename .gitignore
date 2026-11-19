@@ -3,3 +3,5 @@
 ai_lens/cache/
 ai_lens/packets/
 __pycache__/
+ai_lens/paper/.lock
+ai_lens/paper/*.tmp

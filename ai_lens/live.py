@@ -13,36 +13,21 @@ Para que Claude Code decida con criterio propio, abre Claude Code en el repo y p
     "Usa ai_lens/AGENT_PROMPT.md como instrucciones. Lee ai_lens/packets/latest_BTC.json
      y dame la señal de esta vela."
 
-Telegram (opcional): si existen las variables de entorno TELEGRAM_TOKEN y TELEGRAM_CHAT_ID,
-se envía un aviso en cada LONG_SETUP / SHORT_SETUP.
+Telegram (opcional): ver notify.py. Avisa en cada LONG_SETUP / SHORT_SETUP.
 """
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import time
-import urllib.parse
-import urllib.request
 from pathlib import Path
 
 import pandas as pd
 
-from . import agent, data, indicator
+from . import agent, data, indicator, notify
 
 OUT = Path(__file__).resolve().parent / "packets"
 WARMUP_BARS = 1500  # suficiente para EMA 200 y percentil de ATR
-
-
-def telegram(text: str):
-    tok, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
-    if not tok or not chat:
-        return
-    body = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode()
-    try:
-        urllib.request.urlopen(f"https://api.telegram.org/bot{tok}/sendMessage", body, timeout=15)
-    except Exception as e:
-        print("telegram:", e)
 
 
 def step(assets, tf, htf, rules):
@@ -62,7 +47,7 @@ def step(assets, tf, htf, rules):
               + (f" ({'; '.join(d['concerns'])})" if d.get("concerns") else ""))
         if p["event"] in ("LONG_SETUP", "SHORT_SETUP"):
             t = p["trade"]
-            telegram(f"AI Lens {a} {tf}: {p['event']} | agente: {d['decision']} (conf {d.get('confidence')})\n"
+            notify.send(f"AI Lens {a} {tf}: {p['event']} | agente: {d['decision']} (conf {d.get('confidence')})\n"
                      f"entrada {t['entry']}  stop {t['stop']}  T1 {t['target_1']}  T2 {t['target_2']}\n"
                      f"tamaño {d.get('position_size_units')}  dudas: {'; '.join(d.get('concerns') or [])}")
 

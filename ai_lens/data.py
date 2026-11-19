@@ -105,13 +105,22 @@ def load(asset: str, tf: str = "4h", source: str = "futures", start="2022-01-01"
     sym = (FUTURES_SYMBOLS if source == "futures" else SPOT_SYMBOLS).get(asset.upper(), asset)
     CACHE_DIR.mkdir(exist_ok=True)
     cache = CACHE_DIR / f"{source}_{sym}_{tf}.csv"
+    start_ts = pd.Timestamp(start)
+    start_ts = start_ts.tz_localize("UTC") if start_ts.tzinfo is None else start_ts
     if cache.exists() and not refresh:
         df = pd.read_csv(cache, parse_dates=["time"])
         df["time"] = pd.to_datetime(df["time"], utc=True)
-        fresh = df["time"].iloc[-1] + pd.Timedelta(seconds=2 * TF_SECONDS[tf]) > min(end, pd.Timestamp.now(tz="UTC"))
-        if df["time"].iloc[0] <= pd.Timestamp(start, tz="UTC") and fresh:
+        if df["time"].iloc[0] <= start_ts:
+            fresh = df["time"].iloc[-1] + pd.Timedelta(seconds=2 * TF_SECONDS[tf]) > min(end, pd.Timestamp.now(tz="UTC"))
+            if fresh:
+                return df
+            # actualización incremental: solo las velas nuevas
+            new = fetch_futures(sym, tf, df["time"].iloc[-1], end) if source == "futures" else fetch_spot(sym, tf)
+            df = (pd.concat([df, new]).drop_duplicates("time", keep="last").sort_values("time")
+                  .reset_index(drop=True))
+            df.to_csv(cache, index=False)
             return df
-    df = fetch_futures(sym, tf, start, end) if source == "futures" else fetch_spot(sym, tf)
+    df = fetch_futures(sym, tf, start_ts, end) if source == "futures" else fetch_spot(sym, tf)
     df.to_csv(cache, index=False)
     return df
 
