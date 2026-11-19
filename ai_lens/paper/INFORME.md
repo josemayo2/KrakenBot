@@ -1,8 +1,8 @@
 # Paper trading AI Lens
 
-Inicio: **2026-11-19T12:00:00Z** (0.1 días) · actualizado 2026-11-19T15:01:58Z · BTC, ETH, SOL 4h · capital inicial 1000.0 USD · riesgo 0.5 % por operación · costes 5.0+2.0 bps por lado
+Inicio: **2026-11-19T12:00:00Z** (0.2 días) · actualizado 2026-11-19T16:42:56Z · BTC, ETH, SOL 4h · capital inicial 1000.0 USD · riesgo 0.5 % por operación · costes 5.0+2.0 bps por lado
 
-Última vela procesada: BTC 2026-11-19T12:00:00Z, ETH 2026-11-19T12:00:00Z, SOL 2026-11-19T12:00:00Z
+Última vela procesada: BTC 2026-11-19T16:00:00Z, ETH 2026-11-19T16:00:00Z, SOL 2026-11-19T16:00:00Z
 
 | Estrategia | Capital USD | Rentab. | Abierto USD | Cerradas | Aciertos | R neto | R/op | Máx. DD | PF | Decisiones en setups |
 |---|---|---|---|---|---|---|---|---|---|---|
