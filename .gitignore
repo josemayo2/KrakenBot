@@ -1,0 +1,5 @@
+
+# AI Lens: datos descargados y paquetes en vivo
+ai_lens/cache/
+ai_lens/packets/
+__pycache__/

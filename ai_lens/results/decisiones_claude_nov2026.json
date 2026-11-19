@@ -1,0 +1,122 @@
+[
+ {
+  "asset": "ETH",
+  "time": "2026-11-02T16:00:00Z",
+  "decision": "WAIT",
+  "confidence": 55,
+  "concerns": [
+   "prev_day_low 2245.9 entre entrada y T1",
+   "DI-/DI+ casi empatados (19.9 vs 18.0)",
+   "MACD hist a\u00fan positivo"
+  ]
+ },
+ {
+  "asset": "BTC",
+  "time": "2026-11-07T00:00:00Z",
+  "decision": "SKIP",
+  "confidence": 25,
+  "concerns": [
+   "swing low 75624 y PDL 74986 bloquean el camino a T1",
+   "volumen relativo 0.33",
+   "vela de cuerpo 7.6%, MACD hist subiendo"
+  ]
+ },
+ {
+  "asset": "ETH",
+  "time": "2026-11-07T12:00:00Z",
+  "decision": "SKIP",
+  "confidence": 20,
+  "concerns": [
+   "doji con volumen relativo 0.17",
+   "PDL 2206.9 y swing low 2200.2 antes de T1",
+   "MACD hist subiendo"
+  ]
+ },
+ {
+  "asset": "ETH",
+  "time": "2026-11-09T00:00:00Z",
+  "decision": "WAIT",
+  "confidence": 35,
+  "concerns": [
+   "vela de capitulaci\u00f3n 5.7 ATR que cierra en la mitad alta (53.7%)",
+   "RSI 23 sobrevendido",
+   "stop 1.5 ATR diminuto frente al rango de la vela"
+  ]
+ },
+ {
+  "asset": "SOL",
+  "time": "2026-11-09T00:00:00Z",
+  "decision": "SHORT",
+  "confidence": 60,
+  "concerns": [
+   "RSI 27, movimiento ya extendido",
+   "ETH rechaza m\u00ednimos en la misma vela",
+   "htf N/A"
+  ]
+ },
+ {
+  "asset": "ETH",
+  "time": "2026-11-13T04:00:00Z",
+  "decision": "SHORT",
+  "confidence": 62,
+  "concerns": [
+   "RSI 22 y ADX 57: tendencia muy extendida",
+   "htf N/A"
+  ]
+ },
+ {
+  "asset": "SOL",
+  "time": "2026-11-13T04:00:00Z",
+  "decision": "SHORT",
+  "confidence": 55,
+  "concerns": [
+   "correlado con el short de ETH en la misma vela",
+   "volumen solo 1.36x",
+   "RSI 22"
+  ]
+ },
+ {
+  "asset": "SOL",
+  "time": "2026-11-13T16:00:00Z",
+  "decision": "WAIT",
+  "confidence": 45,
+  "concerns": [
+   "VWAP 79.82 justo debajo de la entrada",
+   "m\u00ednimo reciente 77.78 antes de T1",
+   "cuerpo 17.9%, MACD hist subiendo"
+  ]
+ },
+ {
+  "asset": "ETH",
+  "time": "2026-11-17T12:00:00Z",
+  "decision": "SKIP",
+  "confidence": 15,
+  "concerns": [
+   "HAMMER: mecha inferior 76.6%, cierre al 76.6% del rango",
+   "rechazo del PDL 1784.3",
+   "MACD hist positivo"
+  ]
+ },
+ {
+  "asset": "BTC",
+  "time": "2026-11-17T16:00:00Z",
+  "decision": "SKIP",
+  "confidence": 30,
+  "concerns": [
+   "ruptura fallida: perfora PDL/swing low 63834 y cierra por encima",
+   "nivel 63834 entre entrada y T1",
+   "MACD hist positivo"
+  ]
+ },
+ {
+  "asset": "SOL",
+  "time": "2026-11-17T16:00:00Z",
+  "decision": "SKIP",
+  "confidence": 30,
+  "concerns": [
+   "PDL/swing low 69.83 entre entrada y T1",
+   "cierre a media vela (42.6%)",
+   "MACD hist positivo"
+  ]
+ }
+]
