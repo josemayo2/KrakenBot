@@ -93,7 +93,9 @@ def paper_payload() -> dict:
                    dias=round((now - inicio).total_seconds() / 86400, 1), capital_inicial=cfg["capital"],
                    riesgo_pct=cfg["riesgo_pct"], activos=", ".join(cfg["activos"]), tf=cfg["tf"],
                    costes_bps_lado=cfg["comision_bps"] + cfg["desliz_bps"])]
-    return dict(estado=estado, resumen=resumen, equity=equity, operaciones=ops, setups=setups)
+    # el estado completo viaja dentro del archivo: así la tarea en la nube lo recupera sin git
+    return dict(estado=estado, resumen=resumen, equity=equity, operaciones=ops, setups=setups,
+                _estado_paper=paper.bundle())
 
 
 def backtest_payload(start="2022-06-01", end="2026-11-18 00:00", sims=300) -> dict:

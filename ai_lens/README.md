@@ -89,7 +89,7 @@ Una tarea programada de Claude se ejecuta cada 4 horas, a los 12 minutos del cie
 1. Actualiza la cartera.
 2. Claude decide los setups pendientes con `AGENT_PROMPT.md` y registra sus decisiones.
 3. Exporta `ai_lens/paper/dashboard.json` y actualiza el panel de seguimiento.
-4. Guarda la cartera en esta rama.
+4. Guarda el estado de la cartera (decisiones de Claude incluidas) dentro del propio archivo del panel. La siguiente ejecución lo recupera con `python -m ai_lens.paper importar-estado`, así que no depende de poder escribir en git.
 
 El backtest del panel sale de `python -m ai_lens.dashboard backtest` (`results/backtest.json`). La prueba de robustez completa está en `python -m ai_lens.robustez`.
 

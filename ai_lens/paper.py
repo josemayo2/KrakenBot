@@ -353,6 +353,35 @@ def cmd_informe(a):
     print(_save_outputs(cfg, tr, summary, state["ultima_vela"]))
 
 
+def bundle() -> dict:
+    """Estado completo de la cartera en un dict (para guardarlo fuera del disco, p. ej. en el panel)."""
+    diario = _p("diario.jsonl").read_text().splitlines() if _p("diario.jsonl").exists() else []
+    return {"config": _read_json("config.json", None), "estado": _read_json("estado.json", None),
+            "decisiones_claude": _read_json("decisiones_claude.json", []),
+            "diario": [json.loads(x) for x in diario if x.strip()]}
+
+
+def cmd_importar_estado(a):
+    """Restaura estado, diario y decisiones de Claude desde un dashboard.json o un bundle exportado."""
+    with _lock():
+        src = json.loads(Path(a.archivo).read_text())
+        b = src.get("_estado_paper", src)
+        cfg = _read_json("config.json", None)
+        if not b or not b.get("config"):
+            print("El archivo no trae estado de la cartera; sigo con el del repositorio.")
+            return
+        if cfg and b["config"].get("inicio") != cfg.get("inicio"):
+            sys.exit(f"El estado es de otra cartera (inicio {b['config'].get('inicio')} y aquí {cfg.get('inicio')}).")
+        if cfg is None:
+            _write_json("config.json", b["config"])
+        if b.get("estado"):
+            _write_json("estado.json", b["estado"])
+        _write_json("decisiones_claude.json", b.get("decisiones_claude") or [])
+        _write_text("diario.jsonl", "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in b.get("diario") or []))
+        print(f"Estado restaurado: {len(b.get('decisiones_claude') or [])} decisiones de Claude, "
+              f"{len(b.get('diario') or [])} entradas de diario, última vela {b.get('estado', {}).get('ultima_vela')}")
+
+
 def cmd_pendientes(a):
     cfg = _config()
     sec = data.TF_SECONDS[cfg["tf"]]
@@ -426,6 +455,8 @@ def main():
     r.add_argument("--quiet", action="store_true")
     sub.add_parser("informe", help="imprimir el informe")
     sub.add_parser("pendientes", help="setups esperando decisión de Claude (JSON por línea)")
+    ie = sub.add_parser("importar-estado", help="restaurar el estado guardado en un dashboard.json")
+    ie.add_argument("archivo")
     d = sub.add_parser("decidir", help="registrar la decisión de Claude para un setup")
     d.add_argument("--activo", required=True)
     d.add_argument("--vela", required=True, help="hora de cierre de la vela del setup (campo time del paquete)")
@@ -436,7 +467,7 @@ def main():
     if a.cmd is None:
         a.cmd, a.quiet = "run", False
     {"init": cmd_init, "run": cmd_run, "informe": cmd_informe, "pendientes": cmd_pendientes,
-     "decidir": cmd_decidir}[a.cmd](a)
+     "decidir": cmd_decidir, "importar-estado": cmd_importar_estado}[a.cmd](a)
 
 
 if __name__ == "__main__":
